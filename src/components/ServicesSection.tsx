@@ -43,12 +43,12 @@ const ServicesSection = () => {
     <section className="section-premium bg-muted/20">
       <div className="container-premium">
         <AnimatedSection className="text-center space-y-4 mb-16">
-          <Badge variant="outline" className="text-primary border-primary/20 bg-primary/5 hover-glow">
+          <Badge variant="outline" className="text-xl text-primary border-primary/20 bg-primary/5 hover-glow">
             Nossos Serviços
           </Badge>
           <h2 className="text-section-title">
             Cuidado Completo para
-            <span style={{ color: "#1976D2" }}> Sua Visão</span>
+            <span className="animated-gradient-text"> Sua Visão</span>
           </h2>
           <p className="text-premium-subtitle max-w-3xl mx-auto">
             Oferecemos uma gama completa de serviços especializados, desde exames 
