@@ -72,12 +72,19 @@
     --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
+
     --sidebar-foreground: 240 5.3% 26.1%;
+
     --sidebar-primary: 240 5.9% 10%;
+
     --sidebar-primary-foreground: 0 0% 98%;
+
     --sidebar-accent: 240 4.8% 95.9%;
+
     --sidebar-accent-foreground: 240 5.9% 10%;
+
     --sidebar-border: 220 13% 91%;
+
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -142,54 +149,6 @@
 /* Import Premium Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* ===== A N I M A Ç Õ E S  B Á S I C A S  D E  N A V E G A Ç Ã O ===== */
-
-/* Scroll suave entre âncoras */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-/* Respeito a prefers-reduced-motion */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-  *, *::before, *::after {
-    animation-duration: 0.001ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.001ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-/* Underline animado para links (hover/ativo) */
-.link-underline {
-  position: relative;
-  transition: color 180ms ease;
-}
-.link-underline::after {
-  content: "";
-  position: absolute;
-  left: 0; bottom: -2px;
-  height: 2px; width: 0%;
-  background: hsl(var(--accent));
-  transition: width 220ms ease;
-}
-.link-underline:hover::after,
-.link-underline[data-active="true"]::after {
-  width: 100%;
-}
-
-/* Barra de progresso do scroll */
-.scroll-progress {
-  position: fixed;
-  top: 0; left: 0;
-  height: 3px;
-  width: 0%;
-  z-index: 50;
-  background: hsl(var(--accent));
-}
-
 @layer components {
   /* Premium Button Variants */
   .btn-premium {
@@ -228,9 +187,9 @@ html:focus-within {
     transform: translateY(-2px);
   }
 
-  .card-product {
-    @apply card-premium cursor-pointer;
-  }
+.card-product {
+  @apply card-premium cursor-pointer;
+}
 
   .card-product:hover {
     box-shadow: var(--shadow-large);

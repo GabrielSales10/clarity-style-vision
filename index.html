@@ -1,30 +1,27 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ótica Premium - Visão com Estilo e Sofisticação</title>
     <meta name="description" content="Ótica Premium em São Paulo. Óculos de grau, óculos de sol, lentes de contato e serviços especializados há mais de 35 anos. Agende sua consulta gratuita!" />
     <meta name="author" content="Ótica Premium" />
     <meta name="keywords" content="ótica, óculos de grau, óculos de sol, lentes de contato, exame de vista, São Paulo, premium, Ray-Ban, Oakley" />
-    <meta name="theme-color" content="#0a0a0a" />
-
+    
     <!-- Canonical URL -->
     <link rel="canonical" href="https://oticapremium.com.br" />
 
-    <!-- Open Graph -->
     <meta property="og:title" content="Ótica Premium - Visão com Estilo e Sofisticação" />
     <meta property="og:description" content="Ótica Premium em São Paulo. Óculos de grau, óculos de sol, lentes de contato e serviços especializados há mais de 35 anos." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://oticapremium.com.br" />
     <meta property="og:image" content="https://oticapremium.com.br/og-image.jpg" />
 
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Ótica Premium - Visão com Estilo e Sofisticação" />
     <meta name="twitter:description" content="Ótica Premium em São Paulo. Óculos de grau, óculos de sol, lentes de contato e serviços especializados há mais de 35 anos." />
     <meta name="twitter:image" content="https://oticapremium.com.br/og-image.jpg" />
-
+    
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -51,16 +48,34 @@
         "@type": "OfferCatalog",
         "name": "Produtos e Serviços",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Óculos de Grau" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Óculos de Sol" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Exame de Vista" } }
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Óculos de Grau"
+            }
+          },
+          {
+            "@type": "Offer", 
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Óculos de Sol"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Exame de Vista"
+            }
+          }
         ]
       }
     }
     </script>
   </head>
 
-  <body class="bg-background text-foreground">
+  <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
