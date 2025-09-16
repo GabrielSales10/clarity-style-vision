@@ -43,12 +43,12 @@ const AboutSection = () => {
     <section id="sobre" className="section-premium bg-muted/20">
       <div className="container-premium">
         <AnimatedSection className="text-center space-y-4 mb-16">
-          <Badge variant="outline" className="text-primary border-primary/20 bg-primary/5 hover-glow">
+          <Badge variant="outline" className="text-lg text-primary border-primary/20 bg-primary/5 hover-glow">
             Nossa História
           </Badge>
           <h2 className="text-section-title">
             Mais que uma ótica,
-            <span style={{ color: "#1976D2" }}> uma experiência</span>
+            <span className="animated-gradient-text"> uma experiência</span>
           </h2>
           <p className="text-premium-subtitle max-w-3xl mx-auto">
             Há mais de 35 anos transformando a forma como as pessoas enxergam o mundo, 
