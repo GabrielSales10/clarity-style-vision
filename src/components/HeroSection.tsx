@@ -73,7 +73,7 @@ const HeroSection = () => {
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="btn-outline-premium border-white text-white hover:bg-white hover:text-primary hover-lift"
+                className="btn-outline-premium border-white text-black hover:bg-white hover:text-primary hover-lift"
               >
                 Conheça nossos Produtos
               </Button>
