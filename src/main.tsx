@@ -4,25 +4,36 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./index.css";
 
-// Lenis para smooth scrolling global
-import Lenis from "lenis";
+function Root() {
+  React.useEffect(() => {
+    let rafId = 0;
+    let lenis: any;
 
-const lenis = new Lenis({
-  duration: 1.1,
-  smoothWheel: true,
-  smoothTouch: false,
-});
+    (async () => {
+      // importa só no client
+      const { default: Lenis } = await import("lenis");
+      lenis = new Lenis({ duration: 1.1, smoothWheel: true, smoothTouch: false });
 
-function raf(time: number) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
+      const raf = (time: number) => {
+        lenis.raf(time);
+        rafId = requestAnimationFrame(raf);
+      };
+      rafId = requestAnimationFrame(raf);
+    })();
+
+    return () => {
+      if (rafId) cancelAnimationFrame(rafId);
+      // lenis não tem dispose, só deixa GC limpar
+    };
+  }, []);
+
+  return (
+    <React.StrictMode>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </React.StrictMode>
+  );
 }
-requestAnimationFrame(raf);
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>
-);
+ReactDOM.createRoot(document.getElementById("root")!).render(<Root />);
