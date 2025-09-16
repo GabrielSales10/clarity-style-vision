@@ -36,6 +36,11 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-white space-y-8">
             <div className="space-y-4">
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 animate-fade-in-down">
+                <Award className="w-4 h-4 mr-2 animate-pulse-glow" />
+                <span className="text-sm font-medium">Premium desde 1985</span>
+              </div>
+              
               <h1 className="text-hero animate-fade-in-up">
                 Enxergue o mundo com
                 <span className="gradient-text block relative">
@@ -43,6 +48,7 @@ const HeroSection = () => {
                     <span 
                       className="inline-block border-r-2 border-white/60 animate-blink"
                       style={{ 
+                        color: "#1976D2"
                         width: `${(typewriterText.length / "estilo e clareza".length) * 100}%`,
                         whiteSpace: 'nowrap'
                       }}
