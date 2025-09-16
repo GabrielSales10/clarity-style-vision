@@ -80,8 +80,8 @@ const Contato = () => {
                   </div>
                   <h3 className="text-card-title">Localização</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Av major Assis, 470<br />
-                    Jardim Iracema, Fortaleza - CE<br />
+                    Rua Augusta, 123<br />
+                    Consolação, São Paulo - SP<br />
                     CEP: 01305-000
                   </p>
                 </CardContent>
@@ -244,8 +244,8 @@ const Contato = () => {
                       <div>
                         <h3 className="font-semibold text-lg">Ótica Premium</h3>
                         <p className="text-muted-foreground">
-                          Av major Assis, 470<br />
-                          Jardim Iracema, Fortaleza - CE
+                          Rua Augusta, 123<br />
+                          Consolação, São Paulo - SP
                         </p>
                         <Button 
                           variant="outline" 

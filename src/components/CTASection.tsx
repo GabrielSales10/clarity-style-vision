@@ -52,8 +52,8 @@ const CTASection = () => {
               <MapPin className="w-6 h-6 text-accent mx-auto" />
               <h3 className="font-semibold">Localização</h3>
               <p className="text-primary-foreground/80 text-sm">
-                Av major Assis, 470<br />
-                Jardim Iracema, Fortaleza - CE
+                Rua Augusta, 123<br />
+                Consolação, São Paulo - SP
               </p>
             </div>
             
