@@ -6,64 +6,68 @@
 
 @layer base {
   :root {
-    /* Base Colors - Premium White & Black Palette */
+    /* Óticas Levy Brand Colors - Based on Logo */
     --background: 0 0% 100%;
-    --foreground: 0 0% 8%;
+    --foreground: 0 0% 0%;
 
     /* Card System */
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 8%;
+    --card-foreground: 0 0% 0%;
 
     /* Popover System */
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 8%;
+    --popover-foreground: 0 0% 0%;
 
-    /* Primary - Deep Sophisticated Black */
-    --primary: 0 0% 8%;
-    --primary-foreground: 0 0% 98%;
+    /* Primary - Blue from Logo */
+    --primary: 210 79% 46%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Secondary - Sophisticated Gray */
-    --secondary: 210 8% 92%;
-    --secondary-foreground: 0 0% 8%;
+    /* Secondary - Light Gray Support */
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 0%;
 
     /* Muted Tones */
-    --muted: 210 8% 96%;
-    --muted-foreground: 210 6% 46%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
 
-    /* Accent - Turquoise Metallic */
-    --accent: 184 82% 45%;
-    --accent-foreground: 0 0% 98%;
+    /* Accent - Red for CTAs and Visual Details */
+    --accent: 0 66% 51%;
+    --accent-foreground: 0 0% 100%;
 
-    /* Premium Accent - Lighter Turquoise */
-    --accent-light: 184 75% 65%;
-    --accent-dark: 184 90% 35%;
+    /* Brand Color Variations */
+    --primary-light: 210 70% 60%;
+    --primary-dark: 210 85% 35%;
+    --accent-light: 0 60% 65%;
+    --accent-dark: 0 75% 40%;
 
-    /* Sophisticated Grays */
-    --gray-light: 210 8% 88%;
-    --gray-medium: 210 6% 70%;
-    --gray-dark: 210 8% 32%;
+    /* Elegant Grays for Support */
+    --gray-light: 0 0% 88%;
+    --gray-medium: 0 0% 70%;
+    --gray-dark: 0 0% 25%;
 
     /* Status Colors */
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 66% 51%;
+    --destructive-foreground: 0 0% 100%;
     --success: 142 76% 36%;
-    --success-foreground: 0 0% 98%;
+    --success-foreground: 0 0% 100%;
 
     /* Border & Input */
-    --border: 210 8% 88%;
-    --input: 210 8% 92%;
-    --ring: 184 82% 45%;
+    --border: 0 0% 90%;
+    --input: 0 0% 96%;
+    --ring: 210 79% 46%;
 
-    /* Premium Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--accent-dark)) 100%);
+    /* Brand Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-dark)) 100%);
     --gradient-card: linear-gradient(145deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);
-    --gradient-premium: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--gray-dark)) 100%);
+    --gradient-premium: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--accent-dark)) 100%);
 
-    /* Shadows - Premium Effects */
+    /* Elegant Shadows */
     --shadow-soft: 0 2px 10px -2px hsl(var(--primary) / 0.08);
     --shadow-medium: 0 8px 25px -8px hsl(var(--primary) / 0.12);
     --shadow-large: 0 20px 40px -15px hsl(var(--primary) / 0.15);
     --shadow-glow: 0 0 30px hsl(var(--accent) / 0.3);
+    --shadow-brand: 0 4px 20px hsl(var(--primary) / 0.2);
 
     /* Animations & Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -98,33 +102,33 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 5%;
+    --foreground: 0 0% 98%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 210 79% 55%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 0 66% 60%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 66% 51%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 0 0% 15%;
+    --input: 0 0% 12%;
+    --ring: 210 79% 55%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -194,9 +198,9 @@
   }
 
   .btn-hero {
-    background: var(--gradient-hero);
+    background: var(--gradient-cta);
     @apply text-white;
-    box-shadow: var(--shadow-medium);
+    box-shadow: var(--shadow-brand);
     transform: scale(1);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
@@ -341,7 +345,7 @@
   }
 
   .gradient-text {
-    background: var(--gradient-hero);
+    background: var(--gradient-premium);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
