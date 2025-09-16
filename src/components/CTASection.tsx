@@ -17,8 +17,8 @@ const CTASection = () => {
       <div className="container-premium relative">
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-serif-elegant font-bold mb-6">
-            Pronto para enxergar o mundo
-            <span style={{ color: "#1976D2" }}>com estilo e clareza?</span>
+            Pronto para enxergar o mundo{' '}
+            <span className="text-primary-blue">com estilo e clareza?</span>
           </h2>
           
           <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
