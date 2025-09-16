@@ -30,13 +30,6 @@ const ProductsSection = () => {
       icon: Contact,
       features: ['Lentes diárias', 'Multifocais', 'Coloridas e cosméticas'],
     },
-    {
-      id: 4,
-      title: 'Serviços Especializados',
-      description: 'Atendimento completo com profissionais qualificados e equipamentos modernos.',
-      icon: Wrench,
-      features: ['Exames de vista', 'Ajustes precisos', 'Consultoria personalizada'],
-    },
   ];
 
   return (
@@ -44,16 +37,16 @@ const ProductsSection = () => {
       <div className="container-premium">
         <div className="text-center mb-16">
           <h2 className="text-section-title">
-            Produtos e Serviços
-            <span className="gradient-text block">Premium</span>
+            Nossos
+            <span className="gradient-text block">Produtos</span>
           </h2>
           <p className="text-premium-subtitle max-w-2xl mx-auto">
-            Oferecemos uma linha completa de produtos ópticos e serviços especializados 
+            Oferecemos uma linha completa de produtos ópticos premium 
             para cuidar da sua visão com a máxima qualidade e sofisticação.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product) => {
             const IconComponent = product.icon;
             return (

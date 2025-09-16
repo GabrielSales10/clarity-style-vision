@@ -71,29 +71,6 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Stats */}
-          <div className="hidden lg:block">
-            <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-white mb-2">35+</div>
-                  <div className="text-white/80 text-sm">Anos de experiência</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-white mb-2">50k+</div>
-                  <div className="text-white/80 text-sm">Clientes satisfeitos</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-white mb-2">200+</div>
-                  <div className="text-white/80 text-sm">Modelos disponíveis</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-white mb-2">15+</div>
-                  <div className="text-white/80 text-sm">Marcas premium</div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 

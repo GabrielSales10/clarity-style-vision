@@ -17,27 +17,6 @@ const Header = () => {
 
   return (
     <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
-      {/* Top Bar */}
-      <div className="bg-primary text-primary-foreground">
-        <div className="container-premium">
-          <div className="flex items-center justify-between py-2 text-sm">
-            <div className="flex items-center space-x-6">
-              <div className="flex items-center space-x-2">
-                <Phone className="w-4 h-4" />
-                <span>(11) 3456-7890</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <MapPin className="w-4 h-4" />
-                <span>Rua Augusta, 123 - São Paulo, SP</span>
-              </div>
-            </div>
-            <div className="hidden md:block">
-              <span>Seg-Sex: 9h-18h | Sáb: 9h-14h</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Main Navigation */}
       <div className="container-premium">
         <div className="flex items-center justify-between py-4">
