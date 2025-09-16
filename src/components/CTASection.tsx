@@ -18,7 +18,7 @@ const CTASection = () => {
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-serif-elegant font-bold mb-6">
             Pronto para enxergar o mundo
-            <span className="block text-accent-light">com estilo e clareza?</span>
+            <span className="block" style={{ color: '#1976D2' }}>com estilo e clareza?</span>
           </h2>
           
           <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
@@ -30,7 +30,12 @@ const CTASection = () => {
             <Button 
               size="lg" 
               className="bg-accent hover:bg-accent-dark text-white shadow-large hover:shadow-glow transition-all duration-300 group"
-              onClick={() => window.open(whatsappUrl, '_blank')}
+              onClick={() => {
+                const element = document.getElementById('contato');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
             >
               <MessageCircle className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
               Agendar via WhatsApp
@@ -40,6 +45,7 @@ const CTASection = () => {
               variant="outline" 
               size="lg"
               className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+              onClick={() => window.open('tel:+5511987654321', '_self')}
             >
               <Phone className="w-5 h-5 mr-2" />
               Ligar Agora: (11) 3456-7890

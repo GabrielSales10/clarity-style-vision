@@ -51,11 +51,18 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Button variant="outline" size="sm">
+            <Button 
+              variant="outline" 
+              size="sm"
+              onClick={() => window.open('https://wa.me/5511987654321?text=Olá! Gostaria de entrar em contato com a Óticas Levy.', '_blank')}
+            >
               <Phone className="w-4 h-4 mr-2" />
               WhatsApp
             </Button>
-            <Button className="btn-hero">
+            <Button 
+              className="btn-hero"
+              onClick={() => scrollToSection('#contato')}
+            >
               Agendar Consulta
             </Button>
           </div>
@@ -89,11 +96,18 @@ const Header = () => {
                 </button>
               ))}
               <div className="flex flex-col space-y-3 pt-4 border-t border-border">
-                <Button variant="outline" size="sm">
+                <Button 
+                  variant="outline" 
+                  size="sm"
+                  onClick={() => window.open('https://wa.me/5511987654321?text=Olá! Gostaria de entrar em contato com a Óticas Levy.', '_blank')}
+                >
                   <Phone className="w-4 h-4 mr-2" />
                   WhatsApp
                 </Button>
-                <Button className="btn-hero">
+                <Button 
+                  className="btn-hero"
+                  onClick={() => scrollToSection('#contato')}
+                >
                   Agendar Consulta
                 </Button>
               </div>

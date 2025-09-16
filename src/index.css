@@ -39,6 +39,9 @@
     --primary-dark: 210 85% 35%;
     --accent-light: 0 60% 65%;
     --accent-dark: 0 75% 40%;
+    
+    /* Highlight Text Color - Blue from Logo */
+    --highlight-text: 210 79% 46%;
 
     /* Elegant Grays for Support */
     --gray-light: 0 0% 88%;

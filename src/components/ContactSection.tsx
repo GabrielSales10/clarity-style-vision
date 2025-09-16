@@ -93,7 +93,7 @@ const ContactSection = () => {
           </Badge>
           <h2 className="text-section-title">
             Estamos Prontos para
-            <span className="animated-gradient-text"> Atendê-lo</span>
+            <span style={{ color: '#1976D2' }}> Atendê-lo</span>
           </h2>
           <p className="text-premium-subtitle max-w-3xl mx-auto">
             Entre em contato conosco através dos canais abaixo ou visite nossa loja 
@@ -131,110 +131,8 @@ const ContactSection = () => {
           })}
         </div>
 
-        {/* Contact Form & Map */}
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
-          <AnimatedSection animation="fade-right">
-            <Card className="card-premium hover-lift">
-              <CardHeader>
-                <CardTitle className="font-serif-elegant text-2xl">
-                  Envie sua Mensagem
-                </CardTitle>
-                <p className="text-muted-foreground">
-                  Preencha o formulário abaixo e nossa equipe entrará em contato em breve.
-                </p>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                      <Label htmlFor="name">Nome Completo *</Label>
-                      <Input
-                        id="name"
-                        value={formData.name}
-                        onChange={(e) => handleInputChange('name', e.target.value)}
-                        placeholder="Seu nome completo"
-                        required
-                        className="transition-all duration-300 focus:ring-2 focus:ring-primary/20"
-                      />
-                    </div>
-                    <div>
-                      <Label htmlFor="phone">Telefone *</Label>
-                      <Input
-                        id="phone"
-                        value={formData.phone}
-                        onChange={(e) => handleInputChange('phone', e.target.value)}
-                        placeholder="(11) 99999-9999"
-                        required
-                        className="transition-all duration-300 focus:ring-2 focus:ring-primary/20"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <Label htmlFor="email">E-mail *</Label>
-                    <Input
-                      id="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={(e) => handleInputChange('email', e.target.value)}
-                      placeholder="seu@email.com"
-                      required
-                      className="transition-all duration-300 focus:ring-2 focus:ring-primary/20"
-                    />
-                  </div>
-
-                  <div>
-                    <Label htmlFor="subject">Assunto</Label>
-                    <Select onValueChange={(value) => handleInputChange('subject', value)}>
-                      <SelectTrigger className="transition-all duration-300 focus:ring-2 focus:ring-primary/20">
-                        <SelectValue placeholder="Selecione o assunto" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="consulta">Agendamento de Consulta</SelectItem>
-                        <SelectItem value="produtos">Informações sobre Produtos</SelectItem>
-                        <SelectItem value="servicos">Dúvidas sobre Serviços</SelectItem>
-                        <SelectItem value="sugestao">Sugestões</SelectItem>
-                        <SelectItem value="reclamacao">Reclamações</SelectItem>
-                        <SelectItem value="outros">Outros</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-
-                  <div>
-                    <Label htmlFor="message">Mensagem *</Label>
-                    <Textarea
-                      id="message"
-                      value={formData.message}
-                      onChange={(e) => handleInputChange('message', e.target.value)}
-                      placeholder="Descreva como podemos ajudá-lo..."
-                      rows={6}
-                      required
-                      className="transition-all duration-300 focus:ring-2 focus:ring-primary/20"
-                    />
-                  </div>
-
-                  <div className="flex flex-col sm:flex-row gap-4">
-                    <Button type="submit" className="btn-premium flex-1 hover-glow">
-                      <Send className="w-4 h-4 mr-2" />
-                      Enviar Mensagem
-                    </Button>
-                    <Button 
-                      type="button" 
-                      variant="outline"
-                      className="hover-glow"
-                      onClick={() => window.open(whatsappUrl, '_blank')}
-                    >
-                      <MessageCircle className="w-4 h-4 mr-2" />
-                      WhatsApp
-                    </Button>
-                  </div>
-                </form>
-              </CardContent>
-            </Card>
-          </AnimatedSection>
-
-          {/* Map */}
+        {/* Map */}
+        <div className="max-w-4xl mx-auto">
           <AnimatedSection animation="fade-left">
             <Card className="card-premium hover-lift">
               <CardHeader>

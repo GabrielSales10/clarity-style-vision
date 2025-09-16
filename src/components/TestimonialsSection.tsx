@@ -40,7 +40,7 @@ const TestimonialsSection = () => {
           </Badge>
           <h2 className="text-section-title">
             O que nossos 
-            <span className="animated-gradient-text"> clientes dizem</span>
+            <span style={{ color: '#1976D2' }}> clientes dizem</span>
           </h2>
           <p className="text-premium-subtitle max-w-3xl mx-auto">
             Mais de 10.000 clientes satisfeitos confiam na Óticas Levy para 
