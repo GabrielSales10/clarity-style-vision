@@ -244,8 +244,8 @@ const Contato = () => {
                       <div>
                         <h3 className="font-semibold text-lg">Ótica Premium</h3>
                         <p className="text-muted-foreground">
-                          Rua Augusta, 123<br />
-                          Consolação, São Paulo - SP
+                          Av major Assis, 470<br />
+                          Jardim Iracema, Fortaleza - CE
                         </p>
                         <Button 
                           variant="outline" 
