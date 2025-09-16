@@ -38,12 +38,11 @@ const HeroSection = () => {
             <div className="space-y-4">
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 animate-fade-in-down">
                 <Award className="w-4 h-4 mr-2 animate-pulse-glow" />
-                <span className="text-sm font-medium">Premium desde 1985</span>
               </div>
               
               <h1 className="text-hero animate-fade-in-up">
                 Enxergue o mundo com
-                <span className="block relative" style={{ color: '#1976D2' }}>
+                <span className="gradient-text block relative">
                   <span className="inline-block overflow-hidden">
                     <span 
                       className="inline-block border-r-2 border-white/60 animate-blink"
@@ -66,16 +65,7 @@ const HeroSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: '0.7s' }}>
-              <Button 
-                size="lg" 
-                className="btn-hero group hover-glow"
-                onClick={() => {
-                  const element = document.getElementById('contato');
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                  }
-                }}
-              >
+              <Button size="lg" className="btn-hero group hover-glow">
                 Agende sua Consulta
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-all duration-300" />
               </Button>
@@ -83,12 +73,6 @@ const HeroSection = () => {
                 variant="outline" 
                 size="lg" 
                 className="btn-outline-premium border-white text-black hover:bg-white hover:text-primary hover-lift"
-                onClick={() => {
-                  const element = document.getElementById('produtos');
-                  if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                  }
-                }}
               >
                 Conheça nossos Produtos
               </Button>
