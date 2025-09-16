@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Phone, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import logoImage from '@/assets/logo-oticas-levy.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,16 +22,12 @@ const Header = () => {
       <div className="container-premium">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">O</span>
-            </div>
-            <div>
-              <h1 className="font-serif-elegant text-2xl font-bold text-foreground">
-                Ótica Premium
-              </h1>
-              <p className="text-xs text-muted-foreground">Visão com estilo</p>
-            </div>
+          <Link to="/" className="flex items-center">
+            <img
+              src={logoImage}
+              alt="Óticas Levy - Sua melhor visão está aqui!"
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
