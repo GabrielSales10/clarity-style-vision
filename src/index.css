@@ -2,41 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Premium Optical Store Design System */
 
 @layer base {
   :root {
+    /* Base Colors - Premium White & Black Palette */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 0 0% 8%;
 
+    /* Card System */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 0 0% 8%;
 
+    /* Popover System */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 0 0% 8%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Deep Sophisticated Black */
+    --primary: 0 0% 8%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Sophisticated Gray */
+    --secondary: 210 8% 92%;
+    --secondary-foreground: 0 0% 8%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted Tones */
+    --muted: 210 8% 96%;
+    --muted-foreground: 210 6% 46%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Turquoise Metallic */
+    --accent: 184 82% 45%;
+    --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Premium Accent - Lighter Turquoise */
+    --accent-light: 184 75% 65%;
+    --accent-dark: 184 90% 35%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Sophisticated Grays */
+    --gray-light: 210 8% 88%;
+    --gray-medium: 210 6% 70%;
+    --gray-dark: 210 8% 32%;
 
-    --radius: 0.5rem;
+    /* Status Colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+
+    /* Border & Input */
+    --border: 210 8% 88%;
+    --input: 210 8% 92%;
+    --ring: 184 82% 45%;
+
+    /* Premium Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--accent-dark)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);
+    --gradient-premium: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--gray-dark)) 100%);
+
+    /* Shadows - Premium Effects */
+    --shadow-soft: 0 2px 10px -2px hsl(var(--primary) / 0.08);
+    --shadow-medium: 0 8px 25px -8px hsl(var(--primary) / 0.12);
+    --shadow-large: 0 20px 40px -15px hsl(var(--primary) / 0.15);
+    --shadow-glow: 0 0 30px hsl(var(--accent) / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-elegant: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +133,103 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+
+  /* Premium Typography */
+  .font-serif-elegant {
+    font-family: "Playfair Display", "Georgia", serif;
+  }
+
+  .font-sans-clean {
+    font-family: "Inter", "SF Pro Display", system-ui, sans-serif;
+  }
+}
+
+/* Import Premium Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer components {
+  /* Premium Button Variants */
+  .btn-premium {
+    @apply inline-flex items-center justify-center rounded-lg px-6 py-3 font-medium transition-all duration-300;
+    box-shadow: var(--shadow-soft);
+  }
+
+  .btn-hero {
+    background: var(--gradient-hero);
+    @apply text-white hover:scale-[1.02] active:scale-[0.98];
+    box-shadow: var(--shadow-medium);
+  }
+
+  .btn-hero:hover {
+    box-shadow: var(--shadow-large);
+  }
+
+  .btn-elegant {
+    @apply bg-primary text-primary-foreground hover:bg-gray-dark border border-transparent;
+  }
+
+  .btn-outline-premium {
+    @apply border-2 border-accent text-accent bg-transparent hover:bg-accent hover:text-accent-foreground;
+  }
+
+  /* Premium Card Components */
+  .card-premium {
+    @apply bg-card rounded-2xl border border-border overflow-hidden;
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition-elegant);
+  }
+
+  .card-premium:hover {
+    box-shadow: var(--shadow-medium);
+    transform: translateY(-2px);
+  }
+
+  .card-product {
+    @apply card-premium group cursor-pointer;
+  }
+
+  .card-product:hover {
+    box-shadow: var(--shadow-large);
+  }
+
+  /* Premium Text Styles */
+  .text-hero {
+    @apply font-serif-elegant text-5xl md:text-7xl font-bold leading-tight;
+  }
+
+  .text-section-title {
+    @apply font-serif-elegant text-3xl md:text-4xl font-semibold mb-4;
+  }
+
+  .text-card-title {
+    @apply font-serif-elegant text-xl font-semibold mb-2;
+  }
+
+  .text-premium-subtitle {
+    @apply font-sans-clean text-lg text-muted-foreground;
+  }
+
+  /* Premium Layouts */
+  .container-premium {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-premium {
+    @apply py-16 md:py-24;
+  }
+
+  /* Premium Effects */
+  .hover-glow:hover {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .gradient-text {
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }
