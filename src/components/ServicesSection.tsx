@@ -97,21 +97,9 @@ const ServicesSection = () => {
                         ))}
                       </div>
                       
-                      <div className="space-y-3">
-                        <div className="flex items-center justify-center space-x-4 text-sm text-muted-foreground">
-                          <div className="flex items-center hover:text-primary transition-colors">
-                            <Clock className="w-4 h-4 mr-1" />
-                            {service.duration}
-                          </div>
-                          <div className="flex items-center hover:text-primary transition-colors">
-                            <Users className="w-4 h-4 mr-1" />
-                            {service.price}
-                          </div>
-                        </div>
-                        
-                        <Button className="w-full btn-premium hover-glow">
-                          <Phone className="w-4 h-4 mr-2" />
-                          Agendar Consulta
+                      <div className="flex justify-center">
+                        <Button className="btn-premium hover-glow">
+                          Saiba Mais
                         </Button>
                       </div>
                     </div>

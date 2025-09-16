@@ -1,20 +1,26 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Phone, MapPin } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Menu, X, Phone } from 'lucide-react';
 import logoImage from '@/assets/logo-oticas-levy.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: 'Início', href: '/' },
-    { name: 'Sobre Nós', href: '/sobre' },
-    { name: 'Produtos', href: '/produtos' },
-    { name: 'Serviços', href: '/servicos' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'Contato', href: '/contato' },
+    { name: 'Início', href: '#inicio' },
+    { name: 'Sobre Nós', href: '#sobre' },
+    { name: 'Produtos', href: '#produtos' },
+    { name: 'Serviços', href: '#servicos' },
+    { name: 'Contato', href: '#contato' },
   ];
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId.replace('#', ''));
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMenuOpen(false);
+  };
 
   return (
     <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
@@ -22,24 +28,24 @@ const Header = () => {
       <div className="container-premium">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <div className="flex items-center cursor-pointer" onClick={() => scrollToSection('#inicio')}>
             <img
               src={logoImage}
               alt="Óticas Levy - Sua melhor visão está aqui!"
               className="h-24 w-auto"
             />
-          </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             {navigation.map((item) => (
-              <Link
+              <button
                 key={item.name}
-                to={item.href}
+                onClick={() => scrollToSection(item.href)}
                 className="text-foreground hover:text-accent font-medium transition-colors duration-200"
               >
                 {item.name}
-              </Link>
+              </button>
             ))}
           </nav>
 
@@ -74,14 +80,13 @@ const Header = () => {
           <div className="container-premium py-4">
             <nav className="flex flex-col space-y-4">
               {navigation.map((item) => (
-                <Link
+                <button
                   key={item.name}
-                  to={item.href}
-                  className="text-foreground hover:text-accent font-medium py-2 transition-colors duration-200"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => scrollToSection(item.href)}
+                  className="text-foreground hover:text-accent font-medium py-2 transition-colors duration-200 text-left"
                 >
                   {item.name}
-                </Link>
+                </button>
               ))}
               <div className="flex flex-col space-y-3 pt-4 border-t border-border">
                 <Button variant="outline" size="sm">
