@@ -48,7 +48,7 @@ const HeroSection = () => {
                     <span 
                       className="inline-block border-r-2 border-white/60 animate-blink"
                       style={{ 
-                        color: "#1976D2"
+                        color: "#1976D2",
                         width: `${(typewriterText.length / "estilo e clareza".length) * 100}%`,
                         whiteSpace: 'nowrap'
                       }}
