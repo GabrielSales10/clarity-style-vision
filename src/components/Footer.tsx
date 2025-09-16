@@ -113,8 +113,8 @@ const Footer = () => {
                   <MapPin className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-primary-foreground/80 text-sm">
-                      Rua Augusta, 123<br />
-                      Consolação, São Paulo - SP<br />
+                      Av major Assis, 470<br />
+                      Jardim Iracema, Fortaleza - CE<br />
                       CEP: 01305-000
                     </p>
                   </div>
