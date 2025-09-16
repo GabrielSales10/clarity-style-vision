@@ -187,9 +187,9 @@
     transform: translateY(-2px);
   }
 
-  .card-product {
-    @apply card-premium group cursor-pointer;
-  }
+.card-product {
+  @apply card-premium cursor-pointer;
+}
 
   .card-product:hover {
     box-shadow: var(--shadow-large);
