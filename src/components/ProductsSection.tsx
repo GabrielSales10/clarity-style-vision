@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Glasses, Sun, Contact, Wrench } from 'lucide-react';
 import sunglassesImage from '@/assets/sunglasses-collection.jpg';
 import prescriptionImage from '@/assets/prescription-glasses.jpg';
+import contactLensesImage from '@/assets/contact-lenses-product.jpg';
 
 const ProductsSection = () => {
   const products = [
@@ -14,6 +15,7 @@ const ProductsSection = () => {
       icon: Glasses,
       image: prescriptionImage,
       features: ['Lentes antirreflexo', 'Proteção UV', 'Multifocais disponíveis'],
+      color: 'from-blue-500 to-cyan-500',
     },
     {
       id: 2,
@@ -22,13 +24,16 @@ const ProductsSection = () => {
       icon: Sun,
       image: sunglassesImage,
       features: ['Proteção UV 100%', 'Lentes polarizadas', 'Designs exclusivos'],
+      color: 'from-amber-500 to-orange-500',
     },
     {
       id: 3,
       title: 'Lentes de Contato',
       description: 'Liberdade visual com conforto absoluto. Diversas opções para seu estilo de vida.',
       icon: Contact,
+      image: contactLensesImage,
       features: ['Lentes diárias', 'Multifocais', 'Coloridas e cosméticas'],
+      color: 'from-emerald-500 to-teal-500',
     },
   ];
 
@@ -50,20 +55,18 @@ const ProductsSection = () => {
           {products.map((product) => {
             const IconComponent = product.icon;
             return (
-              <Card key={product.id} className="card-product group">
+              <Card key={product.id} className="card-product group overflow-hidden">
                 <div className="relative overflow-hidden">
-                  {product.image && (
-                    <div className="aspect-[4/3] overflow-hidden">
-                      <img
-                        src={product.image}
-                        alt={product.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                    </div>
-                  )}
+                  <div className="aspect-[4/3] overflow-hidden">
+                    <img
+                      src={product.image}
+                      alt={product.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
                   <div className="absolute top-4 left-4">
-                    <div className="w-12 h-12 bg-white/90 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-soft">
-                      <IconComponent className="w-6 h-6 text-accent" />
+                    <div className={`w-12 h-12 bg-gradient-to-br ${product.color} rounded-xl flex items-center justify-center shadow-soft`}>
+                      <IconComponent className="w-6 h-6 text-white" />
                     </div>
                   </div>
                 </div>
@@ -79,7 +82,7 @@ const ProductsSection = () => {
                   <ul className="space-y-2">
                     {product.features.map((feature, index) => (
                       <li key={index} className="flex items-center text-sm text-muted-foreground">
-                        <div className="w-1.5 h-1.5 bg-accent rounded-full mr-2" />
+                        <div className={`w-1.5 h-1.5 bg-gradient-to-r ${product.color} rounded-full mr-2`} />
                         {feature}
                       </li>
                     ))}
