@@ -48,7 +48,7 @@ const ProductsSection = () => {
           </Badge>
           <h2 className="text-section-title">
             Coleção Exclusiva de 
-            <span className="animated-gradient-text"> Óculos Premium</span>
+            <span style={{ color: "#1976D2" }}> Óculos Premium</span>
           </h2>
           <p className="text-premium-subtitle max-w-3xl mx-auto">
             Descubra nossa seleção cuidadosamente curada de óculos das melhores marcas 
