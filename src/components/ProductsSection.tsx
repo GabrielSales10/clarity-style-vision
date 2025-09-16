@@ -1,7 +1,9 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Glasses, Sun, Contact, Wrench } from 'lucide-react';
+import { Star, Eye, ShoppingBag } from 'lucide-react';
+import AnimatedSection from '@/components/AnimatedSection';
 import sunglassesImage from '@/assets/sunglasses-collection.jpg';
 import prescriptionImage from '@/assets/prescription-glasses.jpg';
 import contactLensesImage from '@/assets/contact-lenses-product.jpg';
@@ -9,100 +11,119 @@ import contactLensesImage from '@/assets/contact-lenses-product.jpg';
 const ProductsSection = () => {
   const products = [
     {
-      id: 1,
-      title: 'Óculos de Grau',
-      description: 'Armações elegantes com lentes de alta precisão para todas as necessidades visuais.',
-      icon: Glasses,
+      title: 'Armação Ray-Ban Premium',
+      description: 'Modelo clássico com tecnologia de lentes antirreflexo avançada',
       image: prescriptionImage,
-      features: ['Lentes antirreflexo', 'Proteção UV', 'Multifocais disponíveis'],
-      color: 'from-blue-500 to-cyan-500',
+      price: 'R$ 899',
+      installments: '12x R$ 74,92',
+      badge: 'Bestseller',
+      reviews: 4.9,
     },
     {
-      id: 2,
-      title: 'Óculos de Sol',
-      description: 'Proteção total com estilo. Coleção exclusiva das melhores marcas mundiais.',
-      icon: Sun,
+      title: 'Óculos de Sol Oakley',
+      description: 'Proteção UV total com design esportivo e lentes polarizadas',
       image: sunglassesImage,
-      features: ['Proteção UV 100%', 'Lentes polarizadas', 'Designs exclusivos'],
-      color: 'from-amber-500 to-orange-500',
+      price: 'R$ 1.299',
+      installments: '12x R$ 108,25',
+      badge: 'Premium',
+      reviews: 4.8,
     },
     {
-      id: 3,
-      title: 'Lentes de Contato',
-      description: 'Liberdade visual com conforto absoluto. Diversas opções para seu estilo de vida.',
-      icon: Contact,
+      title: 'Lentes de Contato Diárias',
+      description: 'Conforto absoluto durante todo o dia com hidratação natural',
       image: contactLensesImage,
-      features: ['Lentes diárias', 'Multifocais', 'Coloridas e cosméticas'],
-      color: 'from-emerald-500 to-teal-500',
+      price: 'R$ 159',
+      installments: '3x R$ 53,00',
+      badge: 'Novidade',
+      reviews: 4.7,
     },
   ];
 
   return (
-    <section className="section-premium bg-muted/30">
+    <section className="section-premium bg-background">
       <div className="container-premium">
-        <div className="text-center mb-16">
+        <AnimatedSection className="text-center space-y-4 mb-16">
+          <Badge variant="outline" className="text-primary border-primary/20 bg-primary/5 hover-glow">
+            Produtos Premium
+          </Badge>
           <h2 className="text-section-title">
-            Nossos
-            <span className="gradient-text block">Produtos</span>
+            Coleção Exclusiva de 
+            <span className="animated-gradient-text"> Óculos Premium</span>
           </h2>
-          <p className="text-premium-subtitle max-w-2xl mx-auto">
-            Oferecemos uma linha completa de produtos ópticos premium 
-            para cuidar da sua visão com a máxima qualidade e sofisticação.
+          <p className="text-premium-subtitle max-w-3xl mx-auto">
+            Descubra nossa seleção cuidadosamente curada de óculos das melhores marcas 
+            mundiais, combinando tecnologia avançada com design sofisticado.
           </p>
-        </div>
+        </AnimatedSection>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product) => {
-            const IconComponent = product.icon;
-            return (
-              <Card key={product.id} className="card-product group overflow-hidden">
+          {products.map((product, index) => (
+            <AnimatedSection 
+              key={index}
+              animation="scale"
+              delay={index * 150}
+            >
+              <Card className="card-product hover-lift">
                 <div className="relative overflow-hidden">
-                  <div className="aspect-[4/3] overflow-hidden">
-                    <img
-                      src={product.image}
-                      alt={product.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                  <div className="absolute top-4 left-4">
-                    <div className={`w-12 h-12 bg-gradient-to-br ${product.color} rounded-xl flex items-center justify-center shadow-soft`}>
-                      <IconComponent className="w-6 h-6 text-white" />
+                  <img
+                    src={product.image}
+                    alt={product.title}
+                    className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <Badge className="absolute top-4 right-4 bg-accent text-accent-foreground animate-bounce-in">
+                    {product.badge}
+                  </Badge>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                </div>
+                
+                <CardContent className="p-6">
+                  <div className="space-y-4">
+                    <div>
+                      <h3 className="font-serif-elegant text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                        {product.title}
+                      </h3>
+                      <p className="text-muted-foreground text-sm">
+                        {product.description}
+                      </p>
+                    </div>
+                    
+                    <div className="flex items-center space-x-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Star 
+                          key={i} 
+                          className="w-4 h-4 fill-yellow-400 text-yellow-400 hover:scale-110 transition-transform" 
+                        />
+                      ))}
+                      <span className="text-sm text-muted-foreground ml-2">
+                        ({product.reviews} avaliações)
+                      </span>
+                    </div>
+                    
+                    <div className="flex items-center justify-between">
+                      <div className="space-y-1">
+                        <p className="text-2xl font-bold text-primary group-hover:animate-pulse-glow">
+                          {product.price}
+                        </p>
+                        <p className="text-sm text-muted-foreground">
+                          ou {product.installments}
+                        </p>
+                      </div>
+                      
+                      <div className="flex space-x-2">
+                        <Button size="sm" variant="outline" className="px-3 hover-glow">
+                          <Eye className="w-4 h-4" />
+                        </Button>
+                        <Button size="sm" className="btn-premium hover-lift">
+                          <ShoppingBag className="w-4 h-4 mr-2" />
+                          Comprar
+                        </Button>
+                      </div>
                     </div>
                   </div>
-                </div>
-
-                <CardContent className="p-6 space-y-4">
-                  <div>
-                    <h3 className="text-card-title">{product.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      {product.description}
-                    </p>
-                  </div>
-
-                  <ul className="space-y-2">
-                    {product.features.map((feature, index) => (
-                      <li key={index} className="flex items-center text-sm text-muted-foreground">
-                        <div className={`w-1.5 h-1.5 bg-gradient-to-r ${product.color} rounded-full mr-2`} />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-
-                  <Button variant="ghost" className="w-full group/btn hover:bg-accent/5">
-                    Saiba Mais
-                    <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
-                  </Button>
                 </CardContent>
               </Card>
-            );
-          })}
-        </div>
-
-        <div className="text-center mt-12">
-          <Button size="lg" className="btn-hero">
-            Ver Todos os Produtos
-            <ArrowRight className="w-5 h-5 ml-2" />
-          </Button>
+            </AnimatedSection>
+          ))}
         </div>
       </div>
     </section>

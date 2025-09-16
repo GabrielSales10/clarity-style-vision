@@ -1,7 +1,9 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Eye, Settings, User, Stethoscope } from 'lucide-react';
+import { Clock, Users, Award, Stethoscope, Settings, Phone } from 'lucide-react';
+import AnimatedSection from '@/components/AnimatedSection';
 import eyeExamImage from '@/assets/eye-exam-service.jpg';
 import adjustmentImage from '@/assets/glasses-adjustment-service.jpg';
 import consultationImage from '@/assets/consultation-service.jpg';
@@ -9,100 +11,115 @@ import consultationImage from '@/assets/consultation-service.jpg';
 const ServicesSection = () => {
   const services = [
     {
-      id: 1,
-      title: 'Exames de Vista',
-      description: 'Diagnóstico completo da sua saúde visual com equipamentos de última geração.',
-      icon: Eye,
+      title: 'Exame de Vista Completo',
+      description: 'Tecnologia de ponta para diagnóstico preciso da sua saúde visual',
+      icon: Stethoscope,
       image: eyeExamImage,
-      features: ['Exame completo gratuito', 'Tecnologia digital', 'Relatório detalhado'],
-      color: 'from-blue-500 to-cyan-500',
+      features: ['Mapeamento de retina', 'Pressão ocular', 'Análise de córnea'],
+      duration: '45 min',
+      price: 'Gratuito',
     },
     {
-      id: 2,
-      title: 'Ajustes Precisos',
-      description: 'Serviços técnicos especializados para o perfeito conforto dos seus óculos.',
+      title: 'Ajustes e Reparos',
+      description: 'Serviço técnico especializado para manutenção dos seus óculos',
       icon: Settings,
       image: adjustmentImage,
-      features: ['Ajustes personalizados', 'Reparos especializados', 'Manutenção preventiva'],
-      color: 'from-emerald-500 to-teal-500',
+      features: ['Ajuste de hastes', 'Troca de parafusos', 'Alinhamento perfeito'],
+      duration: '15 min',
+      price: 'R$ 25',
     },
     {
-      id: 3,
-      title: 'Consultoria Personalizada',
-      description: 'Atendimento exclusivo para escolher a armação ideal para seu rosto e estilo.',
-      icon: User,
+      title: 'Consultoria de Estilo',
+      description: 'Análise facial personalizada para escolher a armação ideal',
+      icon: Users,
       image: consultationImage,
-      features: ['Análise facial', 'Consultoria de estilo', 'Atendimento VIP'],
-      color: 'from-purple-500 to-violet-500',
+      features: ['Análise de formato', 'Teste virtual', 'Recomendações'],
+      duration: '30 min',
+      price: 'Cortesia',
     },
   ];
 
   return (
-    <section className="section-premium">
+    <section className="section-premium bg-muted/20">
       <div className="container-premium">
-        <div className="text-center mb-16">
+        <AnimatedSection className="text-center space-y-4 mb-16">
+          <Badge variant="outline" className="text-primary border-primary/20 bg-primary/5 hover-glow">
+            Nossos Serviços
+          </Badge>
           <h2 className="text-section-title">
-            Serviços
-            <span className="gradient-text block">Especializados</span>
+            Cuidado Completo para
+            <span className="animated-gradient-text"> Sua Visão</span>
           </h2>
-          <p className="text-premium-subtitle max-w-2xl mx-auto">
-            Atendimento completo com profissionais qualificados e tecnologia avançada 
-            para cuidar da sua visão com a máxima excelência.
+          <p className="text-premium-subtitle max-w-3xl mx-auto">
+            Oferecemos uma gama completa de serviços especializados, desde exames 
+            detalhados até ajustes precisos, sempre com tecnologia de ponta.
           </p>
-        </div>
+        </AnimatedSection>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service) => {
-            const IconComponent = service.icon;
-            return (
-              <Card key={service.id} className="card-product group overflow-hidden">
-                <div className="relative overflow-hidden">
-                  <div className="aspect-[4/3] overflow-hidden">
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                  <div className="absolute top-4 left-4">
-                    <div className={`w-12 h-12 bg-gradient-to-br ${service.color} rounded-xl flex items-center justify-center shadow-soft`}>
-                      <IconComponent className="w-6 h-6 text-white" />
+          {services.map((service, index) => (
+            <AnimatedSection 
+              key={index}
+              animation={index % 2 === 0 ? 'fade-left' : 'fade-right'}
+              delay={index * 200}
+            >
+              <Card className="card-premium text-center group hover-lift">
+                <CardContent className="p-8">
+                  <div className="space-y-6">
+                    <div className="relative">
+                      <div className="w-16 h-16 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-all duration-500 hover:animate-pulse-glow">
+                        <service.icon className="w-8 h-8 text-primary group-hover:scale-110 transition-transform duration-300" />
+                      </div>
+                      <div className="relative overflow-hidden rounded-lg">
+                        <img
+                          src={service.image}
+                          alt={service.title}
+                          className="w-full h-48 object-cover transition-transform duration-700 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <h3 className="font-serif-elegant text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
+                        {service.title}
+                      </h3>
+                      <p className="text-muted-foreground text-sm mb-4">
+                        {service.description}
+                      </p>
+                      
+                      <div className="space-y-2 mb-6">
+                        {service.features.map((feature, idx) => (
+                          <div key={idx} className="flex items-center text-sm hover:text-primary transition-colors">
+                            <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 animate-pulse"></div>
+                            <span>{feature}</span>
+                          </div>
+                        ))}
+                      </div>
+                      
+                      <div className="space-y-3">
+                        <div className="flex items-center justify-center space-x-4 text-sm text-muted-foreground">
+                          <div className="flex items-center hover:text-primary transition-colors">
+                            <Clock className="w-4 h-4 mr-1" />
+                            {service.duration}
+                          </div>
+                          <div className="flex items-center hover:text-primary transition-colors">
+                            <Users className="w-4 h-4 mr-1" />
+                            {service.price}
+                          </div>
+                        </div>
+                        
+                        <Button className="w-full btn-premium hover-glow">
+                          <Phone className="w-4 h-4 mr-2" />
+                          Agendar Consulta
+                        </Button>
+                      </div>
                     </div>
                   </div>
-                </div>
-
-                <CardContent className="p-6 space-y-4">
-                  <div>
-                    <h3 className="text-card-title">{service.title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      {service.description}
-                    </p>
-                  </div>
-
-                  <ul className="space-y-2">
-                    {service.features.map((feature, index) => (
-                      <li key={index} className="flex items-center text-sm text-muted-foreground">
-                        <div className={`w-1.5 h-1.5 bg-gradient-to-r ${service.color} rounded-full mr-2`} />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-
-                  <Button variant="ghost" className="w-full group/btn hover:bg-accent/5">
-                    Agendar Serviço
-                    <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
-                  </Button>
                 </CardContent>
               </Card>
-            );
-          })}
-        </div>
-
-        <div className="text-center mt-12">
-          <Button size="lg" className="btn-hero">
-            Ver Todos os Serviços
-            <Stethoscope className="w-5 h-5 ml-2" />
-          </Button>
+            </AnimatedSection>
+          ))}
         </div>
       </div>
     </section>

@@ -1,32 +1,28 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import { Star, Quote } from 'lucide-react';
+import AnimatedSection from '@/components/AnimatedSection';
 
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      id: 1,
       name: 'Maria Silva',
-      role: 'Executiva',
-      content: 'Atendimento excepcional! Encontrei o óculos perfeito e o exame foi muito detalhado. Recomendo a todos que buscam qualidade premium.',
+      location: 'São Paulo, SP',
+      comment: 'Atendimento excepcional! A qualidade dos óculos é incrível e o exame foi muito detalhado. Recomendo para todos.',
       rating: 5,
-      avatar: '👩‍💼',
     },
     {
-      id: 2,
       name: 'João Santos',
-      role: 'Designer',
-      content: 'Variedade incrível de marcas e modelos. A equipe é super profissional e me ajudou a escolher um óculos que combina perfeitamente comigo.',
+      location: 'Rio de Janeiro, RJ',
+      comment: 'Excelente variedade de marcas premium. A equipe me ajudou a encontrar o modelo perfeito para meu rosto.',
       rating: 5,
-      avatar: '👨‍💻',
     },
     {
-      id: 3,
       name: 'Ana Costa',
-      role: 'Médica',
-      content: 'Já sou cliente há anos. A qualidade dos produtos e o pós-venda são excepcionais. Sempre indico para meus pacientes.',
+      location: 'Belo Horizonte, MG',
+      comment: 'Já sou cliente há anos. Sempre encontro as últimas tendências e o pós-venda é impecável.',
       rating: 5,
-      avatar: '👩‍⚕️',
     },
   ];
 
@@ -36,67 +32,70 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="section-premium">
+    <section className="section-premium bg-background">
       <div className="container-premium">
-        {/* Testimonials */}
-        <div className="text-center mb-16">
+        <AnimatedSection className="text-center space-y-4 mb-16">
+          <Badge variant="outline" className="text-primary border-primary/20 bg-primary/5 hover-glow">
+            Depoimentos
+          </Badge>
           <h2 className="text-section-title">
-            O que nossos clientes
-            <span className="gradient-text block">dizem sobre nós</span>
+            O que nossos 
+            <span className="animated-gradient-text"> clientes dizem</span>
           </h2>
-          <p className="text-premium-subtitle max-w-2xl mx-auto">
-            Milhares de clientes satisfeitos confiam na nossa expertise e qualidade premium.
+          <p className="text-premium-subtitle max-w-3xl mx-auto">
+            Mais de 10.000 clientes satisfeitos confiam na Óticas Levy para 
+            cuidar da sua visão com excelência e profissionalismo.
           </p>
-        </div>
+        </AnimatedSection>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-20">
-          {testimonials.map((testimonial) => (
-            <Card key={testimonial.id} className="card-premium text-center">
-              <CardContent className="p-8">
-                <div className="mb-6">
-                  <Quote className="w-8 h-8 text-accent mx-auto mb-4" />
-                  <p className="text-muted-foreground italic leading-relaxed">
-                    "{testimonial.content}"
-                  </p>
-                </div>
-
-                <div className="flex justify-center mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-
-                <div className="space-y-2">
-                  <div className="text-4xl mb-2">{testimonial.avatar}</div>
-                  <h4 className="font-semibold text-foreground">{testimonial.name}</h4>
-                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                </div>
-              </CardContent>
-            </Card>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {testimonials.map((testimonial, index) => (
+            <AnimatedSection 
+              key={index}
+              animation="fade-up"
+              delay={index * 150}
+            >
+              <Card className="card-premium relative hover-lift">
+                <CardContent className="p-8">
+                  <div className="space-y-6">
+                    <div className="absolute top-4 right-4">
+                      <Quote className="w-8 h-8 text-primary/20 group-hover:text-primary/40 transition-colors" />
+                    </div>
+                    
+                    <div className="flex items-center space-x-1">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star 
+                          key={i} 
+                          className="w-5 h-5 fill-yellow-400 text-yellow-400 hover:scale-110 transition-transform" 
+                          style={{ animationDelay: `${i * 100}ms` }}
+                        />
+                      ))}
+                    </div>
+                    
+                    <blockquote className="text-foreground font-medium leading-relaxed">
+                      "{testimonial.comment}"
+                    </blockquote>
+                    
+                    <div className="flex items-center space-x-4">
+                      <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors duration-300 hover:animate-pulse-glow">
+                        <span className="font-semibold text-primary">
+                          {testimonial.name.split(' ').map(n => n[0]).join('')}
+                        </span>
+                      </div>
+                      <div>
+                        <div className="font-semibold text-foreground group-hover:text-primary transition-colors">
+                          {testimonial.name}
+                        </div>
+                        <div className="text-sm text-muted-foreground">
+                          {testimonial.location}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </AnimatedSection>
           ))}
-        </div>
-
-        {/* Partner Brands */}
-        <div className="text-center">
-          <h3 className="text-2xl font-serif-elegant font-semibold mb-8 text-foreground">
-            Marcas Parceiras Premium
-          </h3>
-          
-          <div className="bg-gradient-card rounded-2xl p-8 border border-border">
-            <div className="flex flex-wrap justify-center items-center gap-8">
-              {brands.map((brand, index) => (
-                <div
-                  key={index}
-                  className="text-lg font-medium text-muted-foreground hover:text-accent transition-colors duration-200 cursor-pointer"
-                >
-                  {brand}
-                </div>
-              ))}
-            </div>
-            <p className="text-sm text-muted-foreground mt-6">
-              E muitas outras marcas exclusivas disponíveis em nossa loja
-            </p>
-          </div>
         </div>
       </div>
     </section>
