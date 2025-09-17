@@ -64,7 +64,7 @@ const AboutSection = () => {
                 Tradição e Inovação
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Fundada em 1985, a Óticas Levy nasceu com o propósito de revolucionar 
+                Fundada em 1995, a Óticas Levy nasceu com o propósito de revolucionar 
                 o mercado óptico brasileiro, oferecendo produtos de alta qualidade e 
                 atendimento personalizado que supera as expectativas.
               </p>
