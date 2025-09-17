@@ -48,7 +48,7 @@ const AboutSection = () => {
           </Badge>
           <h2 className="text-section-title">
             Mais que uma ótica,
-            <span className="animated-gradient-text"> uma experiência</span>
+            <span style={{ color: "#1976D2" }}> uma experiência</span>
           </h2>
           <p className="text-premium-subtitle max-w-3xl mx-auto">
             Há mais de 35 anos transformando a forma como as pessoas enxergam o mundo, 
