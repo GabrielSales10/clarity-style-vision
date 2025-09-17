@@ -13,6 +13,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
+      <h1>Óticas Levy — v-test</h1>
       <main>
         <div id="inicio">
           <HeroSection />
