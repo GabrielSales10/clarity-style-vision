@@ -60,7 +60,6 @@ const Sobre = () => {
       avatar: '👨‍🔧'
     }
   ];
-
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId.replace('#', ''));
     if (element) {
@@ -110,7 +109,8 @@ const Sobre = () => {
                   e capacitação profissional para garantir os melhores resultados.
                 </p>
                 <Button className="btn-hero"
-                  onClick={() => scrollToSection('#contato')}>
+                  onClick={() => scrollToSection('#contato')}
+                  >
                   Conheça Nossa Loja
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>

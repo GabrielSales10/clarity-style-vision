@@ -39,6 +39,14 @@ const AboutSection = () => {
     { year: '2024', event: 'Mais de 50.000 clientes atendidos com excelência' }
   ];
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId.replace('#', ''));
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMenuOpen(false);
+  };
+  
   return (
     <section id="sobre" className="section-premium bg-muted/20">
       <div className="container-premium">
@@ -73,7 +81,8 @@ const AboutSection = () => {
                 principais marcas mundiais e investimos continuamente em tecnologia 
                 e capacitação profissional para garantir os melhores resultados.
               </p>
-              <Button className="btn-premium hover-glow">
+              <Button className="btn-premium hover-glow"
+                onClick={() => scrollToSection('#contato')}>
                 <ArrowRight className="w-5 h-5 mr-2" />
                 Conheça Nossa Loja
               </Button>
