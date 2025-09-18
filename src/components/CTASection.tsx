@@ -71,7 +71,7 @@ const CTASection = () => {
               <h3 className="font-semibold">Contato Direto</h3>
               <p className="text-primary-foreground/80 text-sm">
                 (85) 32843058<br />
-                contato@oticalevy.com.br
+                contato@oticaslevy.com.br
               </p>
             </div>
           </div>

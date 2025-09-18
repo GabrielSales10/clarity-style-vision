@@ -137,7 +137,7 @@ const Footer = () => {
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-accent flex-shrink-0" />
                   <p className="text-primary-foreground/80 text-sm">
-                    contato@oticalevy.com.br
+                    contato@oticaslevy.com.br
                   </p>
                 </div>
                 

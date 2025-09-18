@@ -107,9 +107,9 @@ const Contato = () => {
                   </div>
                   <h3 className="text-card-title">E-mail</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    contato@oticalevy.com.br<br />
-                    vendas@oticalevy.com.br<br />
-                    suporte@oticalevy.com.br
+                    contato@oticaslevy.com.br<br />
+                    vendas@oticaslevy.com.br<br />
+                    suporte@oticaslevy.com.br
                   </p>
                 </CardContent>
               </Card>
