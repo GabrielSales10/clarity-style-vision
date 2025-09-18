@@ -8,6 +8,14 @@ const HeroSection = () => {
   const { displayedText: typewriterText } = useTypewriter("estilo e clareza", 150);
   const { ref: parallaxRef, offset } = useParallax(0.3);
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId.replace('#', ''));
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMenuOpen(false);
+  };
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Image with Parallax */}
