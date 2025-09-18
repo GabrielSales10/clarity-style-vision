@@ -65,6 +65,7 @@ const HeroSection = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: '0.7s' }}>
               <Button size="lg" className="btn-hero group hover-glow">
+                onClick={() => scrollToSection('#contato')}
                 Agende sua Consulta
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-all duration-300" />
               </Button>
