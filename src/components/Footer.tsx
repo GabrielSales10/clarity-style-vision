@@ -40,7 +40,7 @@ const Footer = () => {
               <div>
                 <div className="flex items-center space-x-2 mb-4">
                   <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
-                    <span className="text-white font-bold text-xl">O</span>
+                    {/* <span className="text-white font-bold text-xl">O</span> */}
                   </div>
                   <div>
                     <h3 className="font-serif-elegant text-2xl font-bold">Óticas Levy</h3>
