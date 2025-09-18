@@ -156,7 +156,7 @@ const ContactSection = () => {
                       <Button 
                         variant="outline" 
                         className="mt-4 hover-glow"
-                        onClick={() => window.open('https://maps.google.com/?q=Rua+Augusta+123+São+Paulo+SP', '_blank')}
+                        onClick={() => window.open('https://maps.google.com/?q=Rua+Major+Assis+470+Fortaleza+CE', '_blank')}
                       >
                         Abrir no Google Maps
                       </Button>
