@@ -51,7 +51,7 @@ const Footer = () => {
                     src={logoImage}
                     alt="Óticas Levy - Sua melhor visão está aqui!"
                     className="h-24 w-auto"
-                  /> 
+                  /> */}
                 </div>
                 <p className="text-primary-foreground/80 leading-relaxed">
                   Há mais de 35 anos cuidando da sua visão com produtos premium, 
