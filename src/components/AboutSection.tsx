@@ -39,14 +39,6 @@ const AboutSection = () => {
     { year: '2024', event: 'Mais de 50.000 clientes atendidos com excelência' }
   ];
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId.replace('#', ''));
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-    setIsMenuOpen(false);
-  };
-  
   return (
     <section id="sobre" className="section-premium bg-muted/20">
       <div className="container-premium">
@@ -59,7 +51,7 @@ const AboutSection = () => {
             <span style={{ color: "#1976D2" }}> uma experiência</span>
           </h2>
           <p className="text-premium-subtitle max-w-3xl mx-auto">
-            Há mais de 35 anos transformando a forma como as pessoas enxergam o mundo, 
+            Há 35 anos transformando a forma como as pessoas enxergam o mundo, 
             combinando tradição, inovação e excelência no atendimento.
           </p>
         </AnimatedSection>
@@ -77,12 +69,11 @@ const AboutSection = () => {
                 atendimento personalizado que supera as expectativas.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Ao longo de mais de três décadas, estabelecemos parcerias com as 
+                Ao longo de três décadas, estabelecemos parcerias com as 
                 principais marcas mundiais e investimos continuamente em tecnologia 
                 e capacitação profissional para garantir os melhores resultados.
               </p>
-              <Button className="btn-premium hover-glow"
-                onClick={() => scrollToSection('#contato')}>
+              <Button className="btn-premium hover-glow">
                 <ArrowRight className="w-5 h-5 mr-2" />
                 Conheça Nossa Loja
               </Button>

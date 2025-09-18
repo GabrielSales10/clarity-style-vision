@@ -54,7 +54,7 @@ const Footer = () => {
                   /> */}
                 </div>
                 <p className="text-primary-foreground/80 leading-relaxed">
-                  Há mais de 35 anos cuidando da sua visão com produtos premium, 
+                  Há mais 35 anos cuidando da sua visão com produtos premium, 
                   tecnologia avançada e atendimento personalizado.
                 </p>
               </div>
@@ -160,7 +160,7 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-primary-foreground/70 text-sm text-center md:text-left">
-              © {currentYear} Óticas Levy. Todos os direitos reservados.
+              © {currentYear} Ótica Premium. Todos os direitos reservados.
             </p>
             <div className="flex space-x-6">
               <a href="#" className="text-primary-foreground/70 hover:text-accent text-sm transition-colors">
