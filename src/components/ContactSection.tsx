@@ -62,7 +62,7 @@ const ContactSection = () => {
       content: [
         'Fixo: (85) 32843058',
         'WhatsApp: (85) 32843058',
-        // 'Emergência: (11) 99999-0000'
+        '                        '
       ]
     },
     {
