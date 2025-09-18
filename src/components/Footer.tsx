@@ -38,7 +38,7 @@ const Footer = () => {
             {/* Company Info */}
             <div className="space-y-6">
               <div>
-                <div className="flex items-center space-x-2 mb-4">
+                {/* <div className="flex items-center space-x-2 mb-4">
                   <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
                     {/* <span className="text-white font-bold text-xl">O</span> */}
                   </div>
@@ -46,7 +46,7 @@ const Footer = () => {
                     <h3 className="font-serif-elegant text-2xl font-bold">Óticas Levy</h3>
                     <p className="text-xs text-primary-foreground/70">Visão com estilo</p>
                   </div>
-                </div>
+                </div> */}
                 <p className="text-primary-foreground/80 leading-relaxed">
                   Há mais de 35 anos cuidando da sua visão com produtos premium, 
                   tecnologia avançada e atendimento personalizado.
