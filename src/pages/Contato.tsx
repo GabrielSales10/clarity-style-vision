@@ -234,7 +234,7 @@ const Contato = () => {
                     Nossa Localização
                   </CardTitle>
                   <p className="text-muted-foreground">
-                    Visite nossa loja no coração de São Paulo para uma experiência completa.
+                    Visite nossa loja para uma experiência completa.
                   </p>
                 </CardHeader>
                 <CardContent>
@@ -250,7 +250,7 @@ const Contato = () => {
                         <Button 
                           variant="outline" 
                           className="mt-4"
-                          onClick={() => window.open('https://maps.google.com/?q=Rua+Augusta+123+São+Paulo+SP', '_blank')}
+                          onClick={() => window.open('https://maps.google.com/?q=Rua+Major+Assis+470+Fortaleza+CE', '_blank')}
                         >
                           Abrir no Google Maps
                         </Button>

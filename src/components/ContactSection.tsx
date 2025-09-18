@@ -140,7 +140,7 @@ const ContactSection = () => {
                   Nossa Localização
                 </CardTitle>
                 <p className="text-muted-foreground">
-                  Visite nossa loja no coração de São Paulo para uma experiência completa.
+                  Visite nossa loja para uma experiência completa.
                 </p>
               </CardHeader>
               <CardContent>
