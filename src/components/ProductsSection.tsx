@@ -30,7 +30,7 @@ const ProductsSection = () => {
     },
     {
       title: 'Óculos de Sol Oakley',
-      description: 'Proteção UV total com design esportivo e lentes polarizadas',
+      description: 'Proteção UV total com design esportivo e lentes polarizadas         ',
       image: sunglassesImage,
       price: 'R$ 1.299',
       installments: '12x R$ 108,25',
