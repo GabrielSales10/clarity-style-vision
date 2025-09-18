@@ -50,9 +50,9 @@ const ContactSection = () => {
       icon: MapPin,
       title: 'Localização',
       content: [
-        'Rua Augusta, 123',
-        'Consolação, São Paulo - SP',
-        'CEP: 01305-000'
+        'Av. Major Assis, 470',
+        'Vila Velha, Fortaleza - CE',
+        'CEP: 60345-150'
       ]
     },
     {
@@ -150,8 +150,8 @@ const ContactSection = () => {
                     <div>
                       <h3 className="font-serif-elegant text-lg font-semibold">Óticas Levy</h3>
                       <p className="text-muted-foreground">
-                        Rua Augusta, 123<br />
-                        Consolação, São Paulo - SP
+                        Av. Major Assis, 470<br />
+                        Vila Velha, Fortaleza - CE
                       </p>
                       <Button 
                         variant="outline" 
@@ -168,7 +168,7 @@ const ContactSection = () => {
                   <h4 className="font-semibold mb-2">Como Chegar:</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Metrô: Estação Consolação (Linha Verde)</li>
-                    <li>• Ônibus: Diversas linhas param na Rua Augusta</li>
+                    <li>• Ônibus: Diversas linhas param na Av. Major Assis, 470</li>
                     <li>• Carro: Estacionamento conveniado disponível</li>
                   </ul>
                 </div>

@@ -80,9 +80,9 @@ const Contato = () => {
                   </div>
                   <h3 className="text-card-title">Localização</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Rua Augusta, 123<br />
-                    Consolação, São Paulo - SP<br />
-                    CEP: 01305-000
+                    Av. Major Assis, 470<br />
+                    Vila Velha, Fortaleza - CE<br />
+                    CEP: 60345-150
                   </p>
                 </CardContent>
               </Card>
@@ -244,8 +244,8 @@ const Contato = () => {
                       <div>
                         <h3 className="font-semibold text-lg">Ótica Premium</h3>
                         <p className="text-muted-foreground">
-                          Rua Augusta, 123<br />
-                          Consolação, São Paulo - SP
+                          Av. Major Assis, 470<br />
+                          Vila Velha, Fortaleza - CE
                         </p>
                         <Button 
                           variant="outline" 
@@ -262,7 +262,7 @@ const Contato = () => {
                     <h4 className="font-semibold mb-2">Como Chegar:</h4>
                     <ul className="text-sm text-muted-foreground space-y-1">
                       <li>• Metrô: Estação Consolação (Linha Verde)</li>
-                      <li>• Ônibus: Diversas linhas param na Rua Augusta</li>
+                      <li>• Ônibus: Diversas linhas param na Av. Major Assis, 470</li>
                       <li>• Carro: Estacionamento conveniado disponível</li>
                     </ul>
                   </div>

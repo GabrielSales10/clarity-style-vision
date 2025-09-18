@@ -31,7 +31,7 @@ const AboutSection = () => {
   ];
 
   const timeline = [
-    { year: '1995', event: 'Fundação da Óticas Levy na Rua Augusta' },
+    { year: '1995', event: 'Fundação da Óticas Levy na Av. Major Assis, 470' },
     { year: '1992', event: 'Primeira expansão e parcerias com marcas internacionais' },
     { year: '2000', event: 'Implementação de tecnologia digital nos exames' },
     { year: '2010', event: 'Certificação em lentes premium e multifocais' },
