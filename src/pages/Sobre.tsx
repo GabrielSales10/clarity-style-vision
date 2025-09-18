@@ -33,7 +33,7 @@ const Sobre = () => {
 
   const timeline = [
     { year: '1985', event: 'Fundação da Ótica Premium na Av. Major Assis, 470' },
-    { year: '1992', event: 'Primeira expansão e parcerias com marcas internacionais' },
+    { year: '1992', event: 'Primeira expansão e parcerias com marcas nacionais' },
     { year: '2000', event: 'Implementação de tecnologia digital nos exames' },
     { year: '2010', event: 'Certificação em lentes premium e multifocais' },
     { year: '2018', event: 'Renovação completa do espaço físico' },
@@ -60,13 +60,6 @@ const Sobre = () => {
       avatar: '👨‍🔧'
     }
   ];
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId.replace('#', ''));
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-    setIsMenuOpen(false);
-  };
 
   return (
     <div className="min-h-screen">
@@ -99,7 +92,7 @@ const Sobre = () => {
                   <span className="gradient-text block">uma experiência</span>
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Fundada em 1985, a Ótica Premium nasceu com o propósito de revolucionar 
+                  Fundada em 1985, a Óticas Levy nasceu com o propósito de revolucionar 
                   o mercado óptico brasileiro, oferecendo produtos de alta qualidade e 
                   atendimento personalizado que supera as expectativas.
                 </p>
@@ -108,9 +101,7 @@ const Sobre = () => {
                   principais marcas mundiais e investimos continuamente em tecnologia 
                   e capacitação profissional para garantir os melhores resultados.
                 </p>
-                <Button className="btn-hero"
-                  onClick={() => scrollToSection('#contato')}
-                  >
+                <Button className="btn-hero">
                   Conheça Nossa Loja
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
@@ -119,7 +110,7 @@ const Sobre = () => {
               <div className="relative">
                 <img
                   src={storeImage}
-                  alt="Interior da Ótica Premium"
+                  alt="Interior da Óticas Levy"
                   className="w-full rounded-2xl shadow-large"
                 />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/20 to-transparent" />

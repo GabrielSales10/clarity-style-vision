@@ -45,7 +45,7 @@ const Contato = () => {
   };
 
   const whatsappNumber = "5511987654321";
-  const whatsappMessage = "Olá! Gostaria de entrar em contato com a Ótica Premium.";
+  const whatsappMessage = "Olá! Gostaria de entrar em contato com a Óticas Levy.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
@@ -107,9 +107,9 @@ const Contato = () => {
                   </div>
                   <h3 className="text-card-title">E-mail</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    contato@oticaslevy.com.br<br />
-                    vendas@oticaslevy.com.br<br />
-                    suporte@oticaslevy.com.br
+                    contato@oticapremium.com.br<br />
+                    vendas@oticapremium.com.br<br />
+                    suporte@oticapremium.com.br
                   </p>
                 </CardContent>
               </Card>
@@ -241,7 +241,7 @@ const Contato = () => {
                     <div className="text-center space-y-4">
                       <MapPin className="w-16 h-16 text-accent mx-auto" />
                       <div>
-                        <h3 className="font-semibold text-lg">Ótica Premium</h3>
+                        <h3 className="font-semibold text-lg">Óticas Levy</h3>
                         <p className="text-muted-foreground">
                           Av. Major Assis, 470<br />
                           Vila Velha, Fortaleza - CE

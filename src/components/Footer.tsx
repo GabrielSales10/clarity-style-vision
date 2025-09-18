@@ -137,7 +137,7 @@ const Footer = () => {
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-accent flex-shrink-0" />
                   <p className="text-primary-foreground/80 text-sm">
-                    contato@oticaslevy.com.br
+                    contato@oticapremium.com.br
                   </p>
                 </div>
                 
@@ -160,7 +160,7 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-primary-foreground/70 text-sm text-center md:text-left">
-              © {currentYear} Ótica Premium. Todos os direitos reservados.
+              © {currentYear} Óticas Levy. Todos os direitos reservados.
             </p>
             <div className="flex space-x-6">
               <a href="#" className="text-primary-foreground/70 hover:text-accent text-sm transition-colors">
