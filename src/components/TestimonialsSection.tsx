@@ -8,7 +8,7 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       name: 'Maria Silva',
-      location: 'São Paulo, SP',
+      location: 'Fortaleza, CE',
       comment: 'Atendimento excepcional! A qualidade dos óculos é incrível e o exame foi muito detalhado. Recomendo para todos.',
       rating: 5,
     },
@@ -35,7 +35,7 @@ const TestimonialsSection = () => {
     <section className="section-premium bg-background">
       <div className="container-premium">
         <AnimatedSection className="text-center space-y-4 mb-16">
-          <Badge variant="outline" className="text-primary border-primary/20 bg-primary/5 hover-glow">
+          <Badge variant="outline" className=" text-xl text-primary border-primary/20 bg-primary/5 hover-glow">
             Depoimentos
           </Badge>
           <h2 className="text-section-title">
