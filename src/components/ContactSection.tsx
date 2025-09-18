@@ -153,6 +153,11 @@ const ContactSection = () => {
                         Av. Major Assis, 470<br />
                         Vila Velha, Fortaleza - CE
                       </p>
+                      <img 
+                        src={require('@/assets/google-maps-bg.png')} // coloque a imagem que você me enviou na pasta assets
+                        alt="Fundo Google Maps"
+                        className="absolute inset-0 w-full h-full object-contain opacity-80 pointer-events-none"
+                      />
                       <Button 
                         variant="outline" 
                         className="mt-4 hover-glow"
