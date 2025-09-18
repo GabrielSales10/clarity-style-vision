@@ -164,14 +164,14 @@ const ContactSection = () => {
                   </div>
                 </div>
                 
-                <div className="mt-6 p-4 bg-muted/30 rounded-lg">
+                {/* <div className="mt-6 p-4 bg-muted/30 rounded-lg">
                   <h4 className="font-semibold mb-2">Como Chegar:</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Metrô: Estação Consolação (Linha Verde)</li>
                     <li>• Ônibus: Diversas linhas param na Av. Major Assis, 470</li>
                     <li>• Carro: Estacionamento conveniado disponível</li>
                   </ul>
-                </div>
+                </div> */}
               </CardContent>
             </Card>
           </AnimatedSection>
