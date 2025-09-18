@@ -49,7 +49,7 @@ const WhatsAppButton = () => {
       </Button>
 
       {/* Pulse Animation Ring */}
-      <div className="absolute inset-0 rounded-full bg-green-500 opacity-20 animate-ping"></div>
+      {/* <div className="absolute inset-0 rounded-full bg-green-500 opacity-20 animate-ping"></div> */}
     </div>
   );
 };
