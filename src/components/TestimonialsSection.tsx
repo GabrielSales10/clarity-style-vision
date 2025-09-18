@@ -7,19 +7,19 @@ import AnimatedSection from '@/components/AnimatedSection';
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: 'Maria Silva',
+      name: 'Júlia Almeida',
       location: 'Fortaleza, CE',
       comment: 'Atendimento excepcional! A qualidade dos óculos é incrível e o exame foi muito detalhado. Recomendo para todos.',
       rating: 5,
     },
     {
-      name: 'João Santos',
+      name: 'Alberto Martins',
       location: 'Fortaleza, CE',
       comment: 'Excelente variedade de marcas premium. A equipe me ajudou a encontrar o modelo perfeito para meu rosto.',
       rating: 5,
     },
     {
-      name: 'Ana Costa',
+      name: 'Marcos Rocha',
       location: 'Fortaleza, CE',
       comment: 'Já sou cliente há anos. Sempre encontro as últimas tendências e o pós-venda é impecável.',
       rating: 5,
