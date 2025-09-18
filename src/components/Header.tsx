@@ -8,10 +8,10 @@ const Header = () => {
 
   const navigation = [
     { name: 'Início', href: '#inicio' },
-    { name: 'Sobre Nós', href: '#sobre' },
     { name: 'Produtos', href: '#produtos' },
     { name: 'Serviços', href: '#servicos' },
     { name: 'Contato', href: '#contato' },
+    { name: 'Sobre Nós', href: '#sobre' },
   ];
 
   const scrollToSection = (sectionId: string) => {
