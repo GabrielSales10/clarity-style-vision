@@ -145,9 +145,9 @@ const ContactSection = () => {
                 </p>
               </CardHeader>
               <CardContent>
-                <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted/50 flex items-center justify-center group hover:bg-muted/30 transition-colors duration-500">
+                <div className="rounded-lg overflow-hidden bg-muted/50 flex items-center justify-center group hover:bg-muted/30 transition-colors duration-500">
                   <div className="text-center space-y-4">
-                    <MapPin className="w-2 h-2 text-primary mx-auto group-hover:scale-110 transition-transform duration-200" />
+                    <MapPin className="w-16 h-16 text-primary mx-auto group-hover:scale-110 transition-transform duration-500" />
                     <div>
                       <h3 className="font-serif-elegant text-lg font-semibold">Óticas Levy</h3>
                       <p className="text-muted-foreground">
