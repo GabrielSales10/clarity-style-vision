@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Twitter, MapPin, Phone, Mail, Clock } from 'lucide-react';
+import logoImage from '@/assets/logo-oticas-levy.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -46,6 +47,11 @@ const Footer = () => {
                     <h3 className="font-serif-elegant text-2xl font-bold">Óticas Levy</h3>
                     <p className="text-xs text-primary-foreground/70">Visão com estilo</p>
                   </div> */}
+                  <img
+                    src={logoImage}
+                    alt="Óticas Levy - Sua melhor visão está aqui!"
+                    className="h-24 w-auto"
+                  />
                 </div>
                 <p className="text-primary-foreground/80 leading-relaxed">
                   Há mais de 35 anos cuidando da sua visão com produtos premium, 
