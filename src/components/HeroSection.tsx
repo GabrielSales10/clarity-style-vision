@@ -68,13 +68,13 @@ const HeroSection = () => {
                 Agende sua Consulta
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-all duration-300" />
               </Button>
-              <Button 
+              {/* <Button 
                 variant="outline" 
                 size="lg" 
                 className="btn-outline-premium border-white text-black hover:bg-white hover:text-primary hover-lift"
               >
                 Conheça nossos Produtos
-              </Button>
+              </Button> */}
             </div>
 
             {/* Trust Indicators */}
