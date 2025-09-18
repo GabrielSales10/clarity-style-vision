@@ -25,11 +25,11 @@ const HeroSection = () => {
       </div>
 
       {/* Floating particles */}
-      {/* <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-white/20 rounded-full animate-float"></div>
         <div className="absolute top-1/3 right-1/4 w-1 h-1 bg-white/30 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
         <div className="absolute bottom-1/3 left-1/3 w-1.5 h-1.5 bg-white/10 rounded-full animate-float" style={{ animationDelay: '2s' }}></div>
-      </div> */}
+      </div>
 
       {/* Content */}
       <div className="relative container-premium">
@@ -94,15 +94,6 @@ const HeroSection = () => {
             </div>
           </div>
 
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-fade-in" style={{ animationDelay: '1.5s' }}>
-        <div className="animate-bounce hover:animate-pulse cursor-pointer">
-          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center hover:border-white/60 transition-colors">
-            <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse"></div>
-          </div>
         </div>
       </div>
     </section>
