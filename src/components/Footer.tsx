@@ -47,11 +47,11 @@ const Footer = () => {
                     <h3 className="font-serif-elegant text-2xl font-bold">Óticas Levy</h3>
                     <p className="text-xs text-primary-foreground/70">Sua melhor visão está aqui!</p>
                   </div> 
-                  {/* <img
+                  <img
                     src={logoImage}
                     alt="Óticas Levy - Sua melhor visão está aqui!"
                     className="h-24 w-auto"
-                  /> */}
+                  /> 
                 </div>
                 <p className="text-primary-foreground/80 leading-relaxed">
                   Há mais de 35 anos cuidando da sua visão com produtos premium, 
