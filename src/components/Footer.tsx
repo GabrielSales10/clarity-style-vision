@@ -44,9 +44,7 @@ const Footer = () => {
                     {/* <span className="text-white font-bold text-xl">O</span> */}
                   {/* </div> */}
                   <div>
-                    <h3 className="font-serif-elegant text-2xl font-bold"
-                      style={{color: "#D32F2F"}}
-                      >Óticas Levy</h3>
+                    <h3 className="font-serif-elegant text-2xl font-bold">Óticas Levy</h3>
                     <p className="text-xs text-primary-foreground/70">Sua melhor visão está aqui!</p>
                   </div> 
                   {/* <img
@@ -139,7 +137,7 @@ const Footer = () => {
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-accent flex-shrink-0" />
                   <p className="text-primary-foreground/80 text-sm">
-                    contato@oticapremium.com.br
+                    contato@oticalevy.com.br
                   </p>
                 </div>
                 
