@@ -47,8 +47,8 @@ const ServicesSection = () => {
             Nossos Serviços
           </Badge>
           <h2 className="text-section-title">
-            Cuidado Completo para
-            <span style={{ color: "#1976D2" }}> Sua Visão</span>
+            Cuidado completo para
+            <span style={{ color: "#1976D2" }}> sua visão</span>
           </h2>
           <p className="text-premium-subtitle max-w-3xl mx-auto">
             Oferecemos uma gama completa de serviços especializados, desde exames 
