@@ -14,13 +14,13 @@ const TestimonialsSection = () => {
     },
     {
       name: 'João Santos',
-      location: 'Rio de Janeiro, RJ',
+      location: 'Fortaleza, CE',
       comment: 'Excelente variedade de marcas premium. A equipe me ajudou a encontrar o modelo perfeito para meu rosto.',
       rating: 5,
     },
     {
       name: 'Ana Costa',
-      location: 'Belo Horizonte, MG',
+      location: 'Fortaleza, CE',
       comment: 'Já sou cliente há anos. Sempre encontro as últimas tendências e o pós-venda é impecável.',
       rating: 5,
     },
