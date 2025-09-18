@@ -42,7 +42,7 @@ const CTASection = () => {
               className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
             >
               <Phone className="w-5 h-5 mr-2" />
-              Ligar Agora: (11) 3456-7890
+              Ligar Agora: (85) 32843058
             </Button>
           </div>
 
@@ -70,7 +70,7 @@ const CTASection = () => {
               <Phone className="w-6 h-6 text-accent mx-auto" />
               <h3 className="font-semibold">Contato Direto</h3>
               <p className="text-primary-foreground/80 text-sm">
-                (11) 3456-7890<br />
+                (85) 32843058<br />
                 contato@oticapremium.com.br
               </p>
             </div>

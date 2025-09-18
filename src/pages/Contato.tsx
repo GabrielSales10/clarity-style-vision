@@ -94,9 +94,8 @@ const Contato = () => {
                   </div>
                   <h3 className="text-card-title">Telefones</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Fixo: (11) 3456-7890<br />
-                    WhatsApp: (11) 98765-4321<br />
-                    Emergência: (11) 99999-0000
+                    Fixo: (85) 32843058<br />
+                    WhatsApp: (85) 32843058<br />
                   </p>
                 </CardContent>
               </Card>

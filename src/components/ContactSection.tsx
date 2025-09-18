@@ -60,9 +60,9 @@ const ContactSection = () => {
       icon: Phone,
       title: 'Telefones',
       content: [
-        'Fixo: (11) 3456-7890',
-        'WhatsApp: (11) 98765-4321',
-        'Emergência: (11) 99999-0000'
+        'Fixo: (85) 32843058',
+        'WhatsApp: (85) 32843058',
+        // 'Emergência: (11) 99999-0000'
       ]
     },
     {
