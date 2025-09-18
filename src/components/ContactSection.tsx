@@ -9,6 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { MapPin, Phone, Mail, Clock, MessageCircle, Send } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import AnimatedSection from '@/components/AnimatedSection';
+import mapaImage from '@/assets/mapa.png';
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -154,7 +155,7 @@ const ContactSection = () => {
                         Vila Velha, Fortaleza - CE
                       </p>
                       <img 
-                        src={require('@/assets/mapa.png')} // coloque a imagem que você me enviou na pasta assets
+                        src={mapaImage}
                         alt="Fundo Google Maps"
                         className="absolute inset-0 w-full h-full object-contain opacity-80 pointer-events-none"
                       />
