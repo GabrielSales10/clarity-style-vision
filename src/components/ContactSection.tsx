@@ -92,8 +92,8 @@ const ContactSection = () => {
             Entre em Contato
           </Badge>
           <h2 className="text-section-title">
-            Estamos Prontos para
-            <span style={{ color: '#1976D2' }}> Atendê-lo</span>
+            Estamos prontos para
+            <span style={{ color: '#1976D2' }}> atendê-lo</span>
           </h2>
           <p className="text-premium-subtitle max-w-3xl mx-auto">
             Entre em contato conosco através dos canais abaixo ou visite nossa loja 
