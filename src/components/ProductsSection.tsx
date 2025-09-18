@@ -20,15 +20,6 @@ const ProductsSection = () => {
       reviews: 4.9,
     },
     {
-      title: 'Óculos de Sol Oakley',
-      description: 'Proteção UV total com design esportivo e lentes polarizadas',
-      image: sunglassesImage,
-      price: 'R$ 1.299',
-      installments: '12x R$ 108,25',
-      badge: 'Premium',
-      reviews: 4.8,
-    },
-    {
       title: 'Lentes de Contato Diárias',
       description: 'Conforto absoluto durante todo o dia com hidratação natural',
       image: contactLensesImage,
@@ -36,6 +27,15 @@ const ProductsSection = () => {
       installments: '3x R$ 53,00',
       badge: 'Novidade',
       reviews: 4.7,
+    },
+    {
+      title: 'Óculos de Sol Oakley',
+      description: 'Proteção UV total com design esportivo e lentes polarizadas',
+      image: sunglassesImage,
+      price: 'R$ 1.299',
+      installments: '12x R$ 108,25',
+      badge: 'Premium',
+      reviews: 4.8,
     },
   ];
 
