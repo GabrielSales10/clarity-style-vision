@@ -40,7 +40,7 @@ const HeroSection = () => {
               
               <h1 className="text-hero animate-fade-in-up">
                 Enxergue o mundo com
-                <span className="gradient-text block relative">
+                <span className="block relative">
                   <span className="inline-block overflow-hidden">
                     <span 
                       className="inline-block border-r-2 border-white/60 animate-blink"
