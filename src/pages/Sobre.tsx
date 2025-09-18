@@ -61,6 +61,14 @@ const Sobre = () => {
     }
   ];
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId.replace('#', ''));
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMenuOpen(false);
+  };
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -101,7 +109,8 @@ const Sobre = () => {
                   principais marcas mundiais e investimos continuamente em tecnologia 
                   e capacitação profissional para garantir os melhores resultados.
                 </p>
-                <Button className="btn-hero">
+                <Button className="btn-hero"
+                  onClick={() => scrollToSection('#contato')}>
                   Conheça Nossa Loja
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
