@@ -29,11 +29,15 @@ const Header = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex items-center cursor-pointer" onClick={() => scrollToSection('#inicio')}>
-            <img
+            {/* <img
               src={logoImage}
               alt="Óticas Levy - Sua melhor visão está aqui!"
               className="h-24 w-auto"
-            />
+            /> */}
+            <h2 className="text-section-title">
+            Exemplo
+              <span style={{ color: "#1976D2" }}> GAMI</span>
+            </h2>
           </div>
 
           {/* Desktop Navigation */}
