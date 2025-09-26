@@ -64,8 +64,7 @@ const Header = () => {
               WhatsApp
             </Button>
             <Button 
-              className="btn-hero"
-              style={{ backgroundColor: "#1976D2", color: "#fff" }}
+              className="btn-hero bg-[#1976D2] text-white hover:bg-[#1565C0]"
               onClick={() => scrollToSection('#contato')}
             >
               Agendar Consulta
