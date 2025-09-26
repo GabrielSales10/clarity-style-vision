@@ -29,15 +29,11 @@ const Header = () => {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex items-center cursor-pointer" onClick={() => scrollToSection('#inicio')}>
-            {/* <img
+            <img
               src={logoImage}
               alt="Óticas Levy - Sua melhor visão está aqui!"
               className="h-24 w-auto"
-            /> */}
-            <h2 className="text-section-title">
-              <span style={{ color: "#D32F2F" }}>Exemplo</span>
-              <span style={{ color: "#1976D2" }}> GAMI</span>
-            </h2>
+            />
           </div>
 
           {/* Desktop Navigation */}
@@ -64,7 +60,7 @@ const Header = () => {
               WhatsApp
             </Button>
             <Button 
-              className="btn-hero bg-[#1976D2] text-white hover:bg-[#1565C0]"
+              className="btn-hero"
               onClick={() => scrollToSection('#contato')}
             >
               Agendar Consulta
@@ -109,7 +105,7 @@ const Header = () => {
                   WhatsApp
                 </Button>
                 <Button 
-                  className="btn-hero bg-[#1976D2] text-white hover:bg-[#1565C0]"
+                  className="btn-hero"
                   onClick={() => scrollToSection('#contato')}
                 >
                   Agendar Consulta
