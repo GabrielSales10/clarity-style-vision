@@ -35,7 +35,7 @@ const Header = () => {
               className="h-24 w-auto"
             /> */}
             <h2 className="text-section-title">
-            Exemplo
+              <span style={{ color: "#D32F2F" }}>Exemplo</span>
               <span style={{ color: "#1976D2" }}> GAMI</span>
             </h2>
           </div>
