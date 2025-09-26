@@ -65,9 +65,9 @@ const Header = () => {
             </Button>
             <Button 
               className="btn-hero"
+              style={{ backgroundColor: "#1976D2", color: "#fff" }}
               onClick={() => scrollToSection('#contato')}
             >
-              style={{ color: "#1976D2" }}
               Agendar Consulta
             </Button>
           </div>
