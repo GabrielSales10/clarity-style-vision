@@ -7,7 +7,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: MessageCircle, href: 'https://wa.me/5585999999999', label: 'WhatsApp' },
+    { icon: MessageCircle, href: 'https://wa.me/5585991320090?text=Olá! Gostaria de entrar em contato com a Óticas Levy.', label: 'WhatsApp' },
     { icon: Instagram, href: 'https://www.instagram.com/otica_levy/', label: 'Instagram' },
     { icon: Twitter, href: '#', label: 'Twitter' },
   ];
