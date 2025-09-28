@@ -64,7 +64,7 @@ const ContactSection = () => {
       ]
     },
     {
-      icon: WhatsApp,
+      icon: Wpp,
       title: 'WhatsApp',
       content: [
         '(85) 99132-0090'
