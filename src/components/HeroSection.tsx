@@ -47,7 +47,7 @@ const HeroSection = () => {
               
               
               <h1 className="text-hero animate-fade-in-up">
-                Enxergue o mundo com
+                Seu mundo com 
                 <span className="block relative">
                   <span className="inline-block overflow-hidden">
                     <span 
@@ -65,9 +65,9 @@ const HeroSection = () => {
               </h1>
               
               <p className="text-premium-subtitle text-white/90 max-w-xl animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
-                Descubra nossa coleção exclusiva de óculos e lentes premium. 
-                Tecnologia avançada, design sofisticado e atendimento personalizado 
-                para cuidar da sua visão com excelência.
+                Descubra nossa coleção exclusiva de óculos de grau. 
+                Lentes com tecnologia avançada, armações com design sofisticado 
+                e atendimento personalizado.
               </p>
             </div>
 
