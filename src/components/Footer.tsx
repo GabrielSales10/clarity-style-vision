@@ -160,18 +160,18 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-primary-foreground/70 text-sm text-center md:text-left">
-              © {currentYear} Ótica Premium. Todos os direitos reservados.
+              © {currentYear} Óticas Levy. Todos os direitos reservados.
             </p>
             <div className="flex space-x-6">
               <a href="#" className="text-primary-foreground/70 hover:text-accent text-sm transition-colors">
                 Política de Privacidade
               </a>
-              <a href="#" className="text-primary-foreground/70 hover:text-accent text-sm transition-colors">
+              {/* <a href="#" className="text-primary-foreground/70 hover:text-accent text-sm transition-colors">
                 Termos de Uso
               </a>
               <a href="#" className="text-primary-foreground/70 hover:text-accent text-sm transition-colors">
                 Cookies
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
