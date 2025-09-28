@@ -51,7 +51,7 @@ const AboutSection = () => {
             <span style={{ color: "#1976D2" }}> uma experiência</span>
           </h2>
           <p className="text-premium-subtitle max-w-3xl mx-auto">
-            Há 35 anos transformando a forma como as pessoas enxergam o mundo, 
+            Há 15 anos transformando a forma como as pessoas enxergam o mundo, 
             combinando tradição, inovação e excelência no atendimento.
           </p>
         </AnimatedSection>
