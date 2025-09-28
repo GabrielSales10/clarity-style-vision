@@ -94,8 +94,8 @@ const Contato = () => {
                   </div>
                   <h3 className="text-card-title">Telefones</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Fixo: (85) 32843058<br />
-                    WhatsApp: (85) 32843058<br />
+                    Fixo: (85) 3284-3058<br />
+                    WhatsApp: (85) 3284-3058<br />
                   </p>
                 </CardContent>
               </Card>

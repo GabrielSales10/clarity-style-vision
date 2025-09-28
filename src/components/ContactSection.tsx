@@ -60,7 +60,7 @@ const ContactSection = () => {
       icon: Phone,
       title: 'Telefones',
       content: [
-        'Fixo: (85) 32843058',
+        'Fixo: (85) 3284-3058',
         'WhatsApp: (85) 32843058',
         '                        '
       ]
