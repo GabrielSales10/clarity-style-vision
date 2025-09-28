@@ -91,7 +91,7 @@ const HeroSection = () => {
             <div className="flex items-center space-x-8 pt-8 animate-fade-in-up" style={{ animationDelay: '1s' }}>
               <div className="flex items-center space-x-2 hover-glow cursor-default">
                 <Eye className="w-5 h-5 text-accent animate-pulse-glow" />
-                <span className="text-sm">Exames gratuitos</span>
+                <span className="text-sm">Exames de Vista Computadorizado</span>
               </div>
               <div className="flex items-center space-x-2 hover-glow cursor-default">
                 <Shield className="w-5 h-5 text-accent animate-pulse-glow" style={{ animationDelay: '0.5s' }} />
@@ -99,7 +99,7 @@ const HeroSection = () => {
               </div>
               <div className="flex items-center space-x-2 hover-glow cursor-default">
                 <Award className="w-5 h-5 text-accent animate-pulse-glow" style={{ animationDelay: '1s' }} />
-                <span className="text-sm">Marcas premium</span>
+                <span className="text-sm">Modelos Versáteis</span>
               </div>
             </div>
           </div>
