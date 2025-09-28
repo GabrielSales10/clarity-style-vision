@@ -11,8 +11,8 @@ import contactLensesImage from '@/assets/contact-lenses-product.jpg';
 const ProductsSection = () => {
   const products = [
     {
-      title: 'Armação Ray-Ban Premium',
-      description: 'Modelo clássico com tecnologia de lentes antirreflexo avançada',
+      title: 'Óculos de Grau',
+      description: 'Armações leves e resistentes com ajuste perfeito.',
       image: prescriptionImage,
       price: 'R$ 899',
       installments: '12x R$ 74,92',
@@ -20,8 +20,8 @@ const ProductsSection = () => {
       reviews: 4.9,
     },
     {
-      title: 'Lentes de Contato Diárias',
-      description: 'Conforto absoluto durante todo o dia com hidratação natural',
+      title: 'Óculos de Sol',
+      description: 'Proteção UV e modelos icônicos para todos os estilos.',
       image: contactLensesImage,
       price: 'R$ 159',
       installments: '3x R$ 53,00',
@@ -29,8 +29,8 @@ const ProductsSection = () => {
       reviews: 4.7,
     },
     {
-      title: 'Óculos de Sol Oakley',
-      description: 'Proteção UV total com design esportivo e lentes polarizadas         ',
+      title: 'Lentes',
+      description: 'Antirreflexo, filtro azul, fotossensíveis e progressivas digitais.',
       image: sunglassesImage,
       price: 'R$ 1.299',
       installments: '12x R$ 108,25',
