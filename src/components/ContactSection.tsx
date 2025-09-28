@@ -60,6 +60,8 @@ const ContactSection = () => {
       icon: Phone,
       title: 'Telefones',
       content: [
+        'Fixo: (85) 3284-3058',
+        'Fixo: (85) 3284-3058',
         'Fixo: (85) 3284-3058'
       ]
     },
