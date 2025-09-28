@@ -44,7 +44,7 @@ const AboutSection = () => {
       <div className="container-premium">
         <AnimatedSection className="text-center space-y-4 mb-16">
           <Badge variant="outline" className="text-xl text-primary border-primary/20 bg-primary/5 hover-glow">
-            Nossa História
+            Sobre Nós
           </Badge>
           <h2 className="text-section-title">
             Mais que uma ótica,
