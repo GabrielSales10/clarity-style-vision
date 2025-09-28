@@ -59,7 +59,7 @@ const AboutSection = () => {
         {/* Mission & Store */}
         <AnimatedSection animation="fade-up" className="mb-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-4">
+            <div className="space-y-5">
               <h3 className="font-serif-elegant text-2xl font-semibold">
                 Quem somos
               </h3>
