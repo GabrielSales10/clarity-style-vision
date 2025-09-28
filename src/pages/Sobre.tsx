@@ -75,7 +75,7 @@ const Sobre = () => {
                 <span className="gradient-text block">História</span>
               </h1>
               <p className="text-xl leading-relaxed">
-                Há 35 anos transformando a forma como as pessoas enxergam o mundo, 
+                Há 15 anos transformando a forma como as pessoas enxergam o mundo, 
                 combinando tradição, inovação e excelência no atendimento.
               </p>
             </div>

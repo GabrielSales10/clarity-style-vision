@@ -54,7 +54,7 @@ const Footer = () => {
                   /> */}
                 </div>
                 <p className="text-primary-foreground/80 leading-relaxed">
-                  Há mais 35 anos cuidando da sua visão com produtos premium, 
+                  Há mais 15 anos cuidando da sua visão com produtos premium, 
                   tecnologia avançada e atendimento personalizado.
                 </p>
               </div>
