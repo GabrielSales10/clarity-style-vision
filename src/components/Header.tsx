@@ -63,7 +63,7 @@ const Header = () => {
               className="btn-hero"
               onClick={() => scrollToSection('#contato')}
             >
-              Agendar Consulta
+              Agende sua Consulta
             </Button>
           </div>
 
@@ -108,7 +108,7 @@ const Header = () => {
                   className="btn-hero"
                   onClick={() => scrollToSection('#contato')}
                 >
-                  Agendar Consulta
+                  Agende sua Consulta
                 </Button>
               </div>
             </nav>
