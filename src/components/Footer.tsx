@@ -120,7 +120,7 @@ const Footer = () => {
                   <div>
                     <p className="text-primary-foreground/80 text-sm">
                       Av. Major Assis, 470<br />
-                      Vila Velha, Fortaleza - CE<br />
+                      Jardim Iracema, Fortaleza - CE<br />
                       CEP: 60345-150
                     </p>
                   </div>

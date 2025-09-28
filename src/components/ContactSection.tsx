@@ -52,7 +52,7 @@ const ContactSection = () => {
       title: 'Localização',
       content: [
         'Av. Major Assis, 470',
-        'Vila Velha, Fortaleza - CE',
+        'Jardim Iracema, Fortaleza - CE',
         'CEP: 60345-150'
       ]
     },
@@ -152,7 +152,7 @@ const ContactSection = () => {
                       <h3 className="font-serif-elegant text-lg font-semibold">Óticas Levy</h3>
                       <p className="text-muted-foreground">
                         Av. Major Assis, 470<br />
-                        Vila Velha, Fortaleza - CE
+                        Jardim Iracema, Fortaleza - CE
                       </p>
                       {/* <img 
                         src={mapaImage}

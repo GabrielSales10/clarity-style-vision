@@ -53,7 +53,7 @@ const CTASection = () => {
               <h3 className="font-semibold">Localização</h3>
               <p className="text-primary-foreground/80 text-sm">
                 Av. Major Assis, 470<br />
-                Vila Velha, Fortaleza - CE
+                Jardim Iracema, Fortaleza - CE
               </p>
             </div>
             

@@ -81,7 +81,7 @@ const Contato = () => {
                   <h3 className="text-card-title">Localização</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     Av. Major Assis, 470<br />
-                    Vila Velha, Fortaleza - CE<br />
+                    Jardim Iracema, Fortaleza - CE<br />
                     CEP: 60345-150
                   </p>
                 </CardContent>
@@ -244,7 +244,7 @@ const Contato = () => {
                         <h3 className="font-semibold text-lg">Óticas Levy</h3>
                         <p className="text-muted-foreground">
                           Av. Major Assis, 470<br />
-                          Vila Velha, Fortaleza - CE
+                          Jardim Iracema, Fortaleza - CE
                         </p>
                         <Button 
                           variant="outline" 
