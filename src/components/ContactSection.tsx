@@ -60,26 +60,22 @@ const ContactSection = () => {
       icon: Phone,
       title: 'Telefones',
       content: [
-        'Fixo: (85) 3284-3058',
-        'WhatsApp: (85) 99132-0090',
-        '                        '
+        'Fixo: (85) 3284-3058'
       ]
     },
     {
-      icon: Mail,
-      title: 'E-mail',
+      icon: Wpp,
+      title: 'WhatsApp',
       content: [
-        'contato@oticaslevy.com.br',
-        'vendas@oticaslevy.com.br',
-        'suporte@oticaslevy.com.br'
+        '(85) 99132-0090'
       ]
     },
     {
       icon: Clock,
       title: 'Horário',
       content: [
-        'Segunda a Sexta: 9h às 18h',
-        'Sábado: 9h às 14h',
+        'Segunda a Sexta: 8h às 18h',
+        'Sábado: 8h às 13h',
         'Domingo: Fechado'
       ]
     }
