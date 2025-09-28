@@ -12,7 +12,7 @@ const Sobre = () => {
     {
       icon: Eye,
       title: 'Visão Clara',
-      description: 'Comprometidoss com a saúde visual e o bem-estar dos nossos clientes.'
+      description: 'Comprometidos com a saúde visual e o bem-estar dos nossos clientes.'
     },
     {
       icon: Award,
