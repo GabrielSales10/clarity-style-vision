@@ -130,16 +130,16 @@ const Footer = () => {
                   <Phone className="w-5 h-5 text-accent flex-shrink-0" />
                   <div>
                     <p className="text-primary-foreground/80 text-sm">(85) 3284-3058</p>
-                    <p className="text-primary-foreground/80 text-sm">(85) 3284-3058</p>
+                    <p className="text-primary-foreground/80 text-sm">(85) 99132-0090</p>
                   </div>
                 </div>
                 
-                <div className="flex items-center space-x-3">
+                {/* <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-accent flex-shrink-0" />
                   <p className="text-primary-foreground/80 text-sm">
                     contato@oticapremium.com.br
                   </p>
-                </div>
+                </div> */}
                 
                 <div className="flex items-start space-x-3">
                   <Clock className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
