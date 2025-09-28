@@ -16,7 +16,7 @@ const AboutSection = () => {
     {
       icon: Award,
       title: 'Excelência',
-      description: 'Produtos premium e atendimento de alta qualidade em todos os serviços.'
+      description: 'Produtos e atendimento de alta qualidade em todos os serviços.'
     },
     {
       icon: Heart,
