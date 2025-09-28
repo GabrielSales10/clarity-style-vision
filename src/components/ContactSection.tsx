@@ -57,7 +57,7 @@ const ContactSection = () => {
     },
     {
       icon: Phone,
-      title: 'Telefones',
+      title: 'Telefone',
       content: ['Fixo: (85) 3284-3058'],
     },
     {
