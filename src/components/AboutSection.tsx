@@ -68,13 +68,14 @@ const AboutSection = () => {
               </p>
               <h3 className="font-serif-elegant text-2xl font-semibold">
                 Nossos diferenciais
-              </h3>   
-              <p className="text-muted-foreground leading-relaxed">
-                •Atendimento humanizado.
-                •Exame de vista computadorizado diariamente.
-                •Montagem e ajuste rápidos.
-                •Garantia real.
-              </p>
+              </h3>
+              <ul className="list-disc list-inside text-muted-foreground leading-relaxed">
+                <li>Atendimento humanizado</li>
+                <li>Exame de vista computadorizado diariamente</li>
+                <li>Montagem e ajuste rápidos</li>
+                <li>Garantia real</li>
+              </ul>
+
               <h3 className="font-serif-elegant text-2xl font-semibold">
                 Frase de confiança
               </h3>
