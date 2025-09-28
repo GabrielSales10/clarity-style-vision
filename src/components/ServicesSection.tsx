@@ -11,8 +11,8 @@ import consultationImage from '@/assets/consultation-service.jpg';
 const ServicesSection = () => {
   const services = [
     {
-      title: 'Exame de Vista Completo',
-      description: 'Tecnologia de ponta para diagnóstico preciso da sua saúde visual',
+      title: 'Exame/Refração “Gratuito”',
+      description: 'Teste de acuidade, medição de DNP e orientação completa.',
       icon: Stethoscope,
       image: eyeExamImage,
       features: ['Mapeamento de retina', 'Pressão ocular', 'Análise de córnea'],
@@ -20,8 +20,8 @@ const ServicesSection = () => {
       price: 'Gratuito',
     },
     {
-      title: 'Ajustes e Reparos',
-      description: 'Serviço técnico especializado para manutenção dos seus óculos',
+      title: 'Ajuste e Manutenção',
+      description: 'Aperto de hastes, alinhamento e troca de plaquetas.',
       icon: Settings,
       image: adjustmentImage,
       features: ['Ajuste de hastes', 'Troca de parafusos', 'Alinhamento perfeito'],
@@ -29,8 +29,17 @@ const ServicesSection = () => {
       price: 'R$ 25',
     },
     {
-      title: 'Consultoria de Estilo',
-      description: 'Análise facial personalizada para escolher a armação ideal',
+      title: 'Garantia & Pós-venda',
+      description: 'Cobertura contra defeitos de fabricação e suporte ágil.',
+      icon: Users,
+      image: consultationImage,
+      features: ['Análise de formato', 'Teste virtual', 'Recomendações'],
+      duration: '30 min',
+      price: 'Cortesia',
+    },
+    {
+      title: 'Lentes Personalizadas',
+      description: 'Anti-reflexo, blue control, transitions e progressivas sob medida.',
       icon: Users,
       image: consultationImage,
       features: ['Análise de formato', 'Teste virtual', 'Recomendações'],
@@ -44,7 +53,7 @@ const ServicesSection = () => {
       <div className="container-premium">
         <AnimatedSection className="text-center space-y-4 mb-16">
           <Badge variant="outline" className="text-xl text-primary border-primary/20 bg-primary/5 hover-glow">
-            Nossos Serviços
+            Serviços
           </Badge>
           <h2 className="text-section-title">
             Cuidado completo para
