@@ -1,16 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Twitter, MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { Facebook, Instagram, Twitter, MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
 import logoImage from '@/assets/logo-oticas-levy.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: WhatsApp, href: '#', label: 'WhatsApp' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
+    { icon: MessageCircle, href: 'https://wa.me/5585999999999', label: 'WhatsApp' },
+    { icon: Instagram, href: 'https://www.instagram.com/otica_levy/', label: 'Instagram' },
     { icon: Twitter, href: '#', label: 'Twitter' },
-    // https://www.instagram.com/otica_levy/
   ];
 
   const quickLinks = [
