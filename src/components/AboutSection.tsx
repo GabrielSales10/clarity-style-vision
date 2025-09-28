@@ -70,7 +70,10 @@ const AboutSection = () => {
                 Nossos diferenciais
               </h3>   
               <p className="text-muted-foreground leading-relaxed">
-                Atendimento humanizado • Exame de vista computadorizado diariamente • Montagem e ajuste rápidos • Garantia real.
+                •Atendimento humanizado.
+                •Exame de vista computadorizado diariamente.
+                •Montagem e ajuste rápidos.
+                •Garantia real.
               </p>
               <h3 className="font-serif-elegant text-2xl font-semibold">
                 Frase de confiança
