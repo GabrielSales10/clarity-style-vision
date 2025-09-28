@@ -54,7 +54,7 @@ const Header = () => {
             <Button 
               variant="outline" 
               size="sm"
-              onClick={() => window.open('https://wa.me/5585991320090?text=Olá! Gostaria de entrar em contato com a Óticas Levy.', '_blank')}
+              onClick={() => window.open('https://wa.me/5585991320090?text=Olá! Gostaria de agendar uma consulta na Óticas Levy.', '_blank')}
             >
               <Phone className="w-4 h-4 mr-2" />
               WhatsApp
@@ -99,7 +99,7 @@ const Header = () => {
                 <Button 
                   variant="outline" 
                   size="sm"
-                  onClick={() => window.open('https://wa.me/5585991320090?text=Olá! Gostaria de entrar em contato com a Óticas Levy.', '_blank')}
+                  onClick={() => window.open('https://wa.me/5585991320090?text=Olá! Gostaria de agendar uma consulta na Óticas Levy.', '_blank')}
                 >
                   <Phone className="w-4 h-4 mr-2" />
                   WhatsApp

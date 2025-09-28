@@ -45,7 +45,7 @@ const Contato = () => {
   };
 
   const whatsappNumber = "5585991320090";
-  const whatsappMessage = "Olá! Gostaria de entrar em contato com a Óticas Levy.";
+  const whatsappMessage = "Olá! Gostaria de agendar uma consulta na Óticas Levy.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
