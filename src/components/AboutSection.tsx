@@ -61,17 +61,22 @@ const AboutSection = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h3 className="font-serif-elegant text-2xl font-semibold">
-                Tradição e Inovação
+                Quem somos
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Fundada em 1995, a Óticas Levy nasceu com o propósito de revolucionar 
-                o mercado óptico brasileiro, oferecendo produtos de alta qualidade e 
-                atendimento personalizado que supera as expectativas.
+                Nas Óticas Levy, unimos tecnologia e acolhimento para cuidar da sua visão com excelência. Nossa missão é oferecer soluções visuais precisas, com designs atuais e preços justos.
               </p>
+              <h3 className="font-serif-elegant text-2xl font-semibold">
+                Nossos diferenciais
+              </h3>   
               <p className="text-muted-foreground leading-relaxed">
-                Ao longo de três décadas, estabelecemos parcerias com as 
-                principais marcas mundiais e investimos continuamente em tecnologia 
-                e capacitação profissional para garantir os melhores resultados.
+                Atendimento humanizado • Exame de vista computadorizado diariamente • Montagem e ajuste rápidos • Garantia real.
+              </p>
+              <h3 className="font-serif-elegant text-2xl font-semibold">
+                Frase de confiança
+              </h3>
+              <p className="text-muted-foreground leading-relaxed">
+                “Ver bem muda tudo: sua produtividade, seu conforto e sua autoestima.”
               </p>
               <Button className="btn-premium hover-glow">
                 <ArrowRight className="w-5 h-5 mr-2" />
