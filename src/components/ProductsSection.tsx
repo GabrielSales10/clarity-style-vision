@@ -44,11 +44,11 @@ const ProductsSection = () => {
       <div className="container-premium">
         <AnimatedSection className="text-center space-y-4 mb-16">
           <Badge variant="outline" className="text-xl text-primary border-primary/20 bg-primary/5 hover-glow">
-            Produtos Premium
+            Produtos
           </Badge>
           <h2 className="text-section-title">
             Coleção Exclusiva de 
-            <span style={{ color: "#1976D2" }}> Óculos Premium</span>
+            <span style={{ color: "#1976D2" }}> Óculos</span>
           </h2>
           <p className="text-premium-subtitle max-w-3xl mx-auto">
             Descubra nossa seleção cuidadosamente curada de óculos das melhores marcas 
