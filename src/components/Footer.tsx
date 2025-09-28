@@ -57,7 +57,28 @@ const Footer = () => {
               </div>
               
               {/* Social Links */}
-              <div>
+              {/* <div>
+                <h4 className="font-semibold mb-3">Siga-nos</h4>
+                <div className="flex space-x-4">
+                  {socialLinks.map((social) => {
+                    const IconComponent = social.icon;
+                    return (
+                      <a
+                        key={social.label}
+                        href={social.href}
+                        className="w-10 h-10 bg-primary-foreground/10 hover:bg-accent rounded-lg flex items-center justify-center transition-colors duration-200"
+                        aria-label={social.label}
+                      >
+                        <IconComponent className="w-5 h-5" />
+                      </a>
+                    );
+                  })}
+                </div>
+              </div> */}
+            </div>
+
+            {/* Quick Links */}
+            <div>
                 <h4 className="font-semibold mb-3">Siga-nos</h4>
                 <div className="flex space-x-4">
                   {socialLinks.map((social) => {
@@ -75,24 +96,6 @@ const Footer = () => {
                   })}
                 </div>
               </div>
-            </div>
-
-            {/* Quick Links */}
-            <div>
-              <h4 className="font-semibold mb-6">Links Rápidos</h4>
-              <ul className="space-y-3">
-                {quickLinks.map((link) => (
-                  <li key={link.name}>
-                    <Link
-                      to={link.href}
-                      className="text-primary-foreground/80 hover:text-accent transition-colors duration-200"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
 
             {/* Services */}
             <div>
