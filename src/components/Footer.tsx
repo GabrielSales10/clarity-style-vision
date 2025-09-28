@@ -8,7 +8,7 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
+    { icon: Instagram, href: 'https://www.instagram.com/otica_levy/', label: 'Instagram' },
     { icon: Twitter, href: '#', label: 'Twitter' },
   ];
 
