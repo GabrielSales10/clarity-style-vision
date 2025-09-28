@@ -22,12 +22,10 @@ const Footer = () => {
   ];
 
   const services = [
-    'Exames de Vista',
-    'Óculos de Grau',
-    'Óculos de Sol',
-    'Lentes de Contato',
-    'Ajustes e Reparos',
-    'Consultoria Personalizada',
+    'Exame/Refração',
+    'Ajuste e Manutenção',
+    'Garantia & Pós-venda',
+    'Lentes Personalizadas',
   ];
 
   return (
