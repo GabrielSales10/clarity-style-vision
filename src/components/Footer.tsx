@@ -145,8 +145,8 @@ const Footer = () => {
                   <Clock className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="text-primary-foreground/80 text-sm">
-                      Segunda a Sexta: 9h às 18h<br />
-                      Sábado: 9h às 14h<br />
+                      Segunda a Sexta: 8h às 18h<br />
+                      Sábado: 8h às 13h<br />
                       Domingo: Fechado
                     </p>
                   </div>

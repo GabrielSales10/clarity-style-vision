@@ -61,8 +61,8 @@ const CTASection = () => {
               <Clock className="w-6 h-6 text-accent mx-auto" />
               <h3 className="font-semibold">Horário de Funcionamento</h3>
               <p className="text-primary-foreground/80 text-sm">
-                Segunda a Sexta: 9h às 18h<br />
-                Sábado: 9h às 14h
+                Segunda a Sexta: 8h às 18h<br />
+                Sábado: 8h às 13h
               </p>
             </div>
             
