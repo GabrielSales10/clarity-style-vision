@@ -61,7 +61,7 @@ const ContactSection = () => {
       title: 'Telefones',
       content: [
         'Fixo: (85) 3284-3058',
-        'WhatsApp: (85) 32843058',
+        'WhatsApp: (85) 99132-0090',
         '                        '
       ]
     },
