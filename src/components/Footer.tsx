@@ -7,7 +7,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
+    { icon: WhatsApp, href: '#', label: 'WhatsApp' },
     { icon: Instagram, href: 'https://www.instagram.com/otica_levy/', label: 'Instagram' },
     { icon: Twitter, href: '#', label: 'Twitter' },
   ];
