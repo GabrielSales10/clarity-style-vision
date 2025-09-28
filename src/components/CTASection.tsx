@@ -3,8 +3,8 @@ import { Button } from '@/components/ui/button';
 import { Phone, MessageCircle, Clock, MapPin } from 'lucide-react';
 
 const CTASection = () => {
-  const whatsappNumber = "5511987654321";
-  const whatsappMessage = "Olá! Gostaria de agendar uma consulta na Ótica Premium.";
+  const whatsappNumber = "5585991320090";
+  const whatsappMessage = "Olá! Gostaria de agendar uma consulta na Óticas Levy.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
