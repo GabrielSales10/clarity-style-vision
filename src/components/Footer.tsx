@@ -8,8 +8,9 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: WhatsApp, href: '#', label: 'WhatsApp' },
-    { icon: Instagram, href: 'https://www.instagram.com/otica_levy/', label: 'Instagram' },
+    { icon: Instagram, href: '#', label: 'Instagram' },
     { icon: Twitter, href: '#', label: 'Twitter' },
+    // https://www.instagram.com/otica_levy/
   ];
 
   const quickLinks = [

@@ -19,8 +19,8 @@ const WhatsAppButton = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const whatsappNumber = "5585994309893";
-  const whatsappMessage = "Olá! Gostaria de agendar uma consulta na Ótica Premium.";
+  const whatsappNumber = "5585991320090";
+  const whatsappMessage = "Olá! Gostaria de agendar uma consulta na Óticas Levy.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   const handleClick = () => {
