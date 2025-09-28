@@ -51,8 +51,7 @@ const ProductsSection = () => {
             <span style={{ color: "#1976D2" }}> Óculos</span>
           </h2>
           <p className="text-premium-subtitle max-w-3xl mx-auto">
-            Descubra nossa seleção cuidadosamente curada de óculos das melhores marcas 
-            mundiais, combinando tecnologia avançada com design sofisticado.
+            Trabalhamos com linhas selecionadas para entregar qualidade, durabilidade e conforto.
           </p>
         </AnimatedSection>
 
