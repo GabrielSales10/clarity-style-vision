@@ -101,7 +101,7 @@ const AboutSection = () => {
             </div>
 
             <AnimatedSection animation="scale" delay={200}>
-              <div className="relative w-full h-[520px] rounded-2xl overflow-hidden shadow-large bg-black">
+              <div className="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-large bg-black">
                 {/* Fundo desfocado (preenche as laterais) */}
                 <video
                   src={storeVideo}
