@@ -101,14 +101,18 @@ const AboutSection = () => {
 
             <AnimatedSection animation="scale" delay={200}>
               <div className="relative group">
-                <img
-                  src={storeImage}
-                  alt="Interior da Óticas Levy"
+                <video
+                  src="/assets/otica.mp4" // caminho do seu vídeo
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   className="w-full rounded-2xl shadow-large transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
             </AnimatedSection>
+
           </div>
         </AnimatedSection>
 
