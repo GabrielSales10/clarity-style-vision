@@ -21,7 +21,7 @@ const TestimonialsSection = () => {
     {
       name: 'Marcos Rocha',
       location: 'Fortaleza, CE',
-      comment: 'Já sou cliente há anos. Sempre encontro as últimas tendências e o pós-venda é impecável.',
+      comment: 'Já sou cliente há anos. Sempre encontro as últimas tendências mais modernas e exclusivas, e o pós-venda é impecável.',
       rating: 5,
     },
   ];
