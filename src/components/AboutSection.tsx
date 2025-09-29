@@ -108,7 +108,7 @@ const AboutSection = () => {
                   loop
                   muted
                   playsInline
-                  className="w-full rounded-2xl shadow-large transition-transform duration-700 group-hover:scale-105"
+                  className="w-full w-[800px] h-[450px] rounded-2xl shadow-large transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
