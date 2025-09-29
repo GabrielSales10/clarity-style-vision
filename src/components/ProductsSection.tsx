@@ -7,6 +7,9 @@ import AnimatedSection from '@/components/AnimatedSection';
 import sunglassesImage from '@/assets/lente.png';
 import prescriptionImage from '@/assets/grau.png';
 import contactLensesImage from '@/assets/sol.png';
+import prescriptionImage2 from '@/assets/grau3.png';
+import prescriptionImage3 from '@/assets/grau2.png';
+import contactLensesImage2 from '@/assets/lente2.png';
 
 const ProductsSection = () => {
   const products = [
@@ -31,7 +34,7 @@ const ProductsSection = () => {
     {
       title: 'Lentes',
       description: 'Antirreflexo, filtro azul, fotossensíveis e progressivas digitais.',
-      image: sunglassesImage,
+      image: contactLensesImage2,
       price: 'R$ 1.299',
       installments: '12x R$ 108,25',
       badge: 'Premium',
@@ -47,18 +50,18 @@ const ProductsSection = () => {
       reviews: 4.9,
     },
     {
-      title: 'Óculos de Sol',
+      title: 'Lentes',
       description: 'Proteção UV e modelos icônicos para todos os estilos.',
-      image: contactLensesImage,
+      image: prescriptionImage2,
       price: 'R$ 159',
       installments: '3x R$ 53,00',
       badge: 'Novidade',
       reviews: 4.7,
     },
     {
-      title: 'Lentes',
+      title: 'Óculos de Grau',
       description: 'Antirreflexo, filtro azul, fotossensíveis e progressivas digitais.',
-      image: sunglassesImage,
+      image: prescriptionImage3,
       price: 'R$ 1.299',
       installments: '12x R$ 108,25',
       badge: 'Premium',
