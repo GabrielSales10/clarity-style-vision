@@ -101,16 +101,26 @@ const AboutSection = () => {
             </div>
 
             <AnimatedSection animation="scale" delay={200}>
-              <div className="relative group">
+              <div className="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-large">
+                {/* vídeo de fundo desfocado */}
                 <video
-                  src={storeVideo} // caminho do seu vídeo
+                  src="/videos/loja.mp4"
                   autoPlay
                   loop
                   muted
                   playsInline
-                  className="w-full h-[550px] object-contain rounded-2xl shadow-large transition-transform duration-700 group-hover:scale-105"
+                  className="absolute inset-0 w-full h-full object-cover blur-lg scale-110"
                 />
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              
+                {/* vídeo principal em destaque */}
+                <video
+                  src="/videos/loja.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="relative z-10 h-full mx-auto object-contain rounded-2xl"
+                />
               </div>
             </AnimatedSection>
 
