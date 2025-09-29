@@ -4,9 +4,9 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Star, Eye, ShoppingBag } from 'lucide-react';
 import AnimatedSection from '@/components/AnimatedSection';
-import sunglassesImage from '@/assets/sol.png';
+import sunglassesImage from '@/assets/lente.png';
 import prescriptionImage from '@/assets/grau.png';
-import contactLensesImage from '@/assets/lente.png';
+import contactLensesImage from '@/assets/sol.png';
 
 const ProductsSection = () => {
   const products = [
