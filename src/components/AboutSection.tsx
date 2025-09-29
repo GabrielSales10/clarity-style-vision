@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Users, Award, Eye, Heart, ArrowRight } from 'lucide-react';
 import AnimatedSection from '@/components/AnimatedSection';
 import storeImage from '@/assets/store-interior.jpg';
+import storeVideo from '@/assets/otica.mp4';
 
 const AboutSection = () => {
   const values = [
@@ -102,7 +103,7 @@ const AboutSection = () => {
             <AnimatedSection animation="scale" delay={200}>
               <div className="relative group">
                 <video
-                  src="/assets/otica.mp4" // caminho do seu vídeo
+                  src={storeVideo} // caminho do seu vídeo
                   autoPlay
                   loop
                   muted
