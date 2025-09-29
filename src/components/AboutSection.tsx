@@ -101,28 +101,31 @@ const AboutSection = () => {
             </div>
 
             <AnimatedSection animation="scale" delay={200}>
-              <div className="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-large">
-                {/* vídeo de fundo desfocado */}
+              <div className="relative w-full h-[520px] rounded-2xl overflow-hidden shadow-large bg-black">
+                {/* Fundo desfocado (preenche as laterais) */}
                 <video
                   src="/videos/loja.mp4"
                   autoPlay
                   loop
                   muted
                   playsInline
-                  className="absolute inset-0 w-full h-full object-cover blur-lg scale-110"
+                  preload="metadata"
+                  className="absolute inset-0 w-full h-full object-cover blur-xl scale-110 pointer-events-none"
                 />
-              
-                {/* vídeo principal em destaque */}
+            
+                {/* Vídeo principal (vertical) */}
                 <video
                   src="/videos/loja.mp4"
                   autoPlay
                   loop
                   muted
                   playsInline
-                  className="relative z-10 h-full mx-auto object-contain rounded-2xl"
+                  preload="metadata"
+                  className="absolute inset-0 m-auto h-full object-contain z-10 rounded-2xl"
                 />
               </div>
             </AnimatedSection>
+
 
           </div>
         </AnimatedSection>
