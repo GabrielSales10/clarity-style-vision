@@ -104,7 +104,7 @@ const AboutSection = () => {
               <div className="relative w-full h-[520px] rounded-2xl overflow-hidden shadow-large bg-black">
                 {/* Fundo desfocado (preenche as laterais) */}
                 <video
-                  src="/videos/loja.mp4"
+                  src="/assets/otica.mp4"
                   autoPlay
                   loop
                   muted
@@ -115,7 +115,7 @@ const AboutSection = () => {
             
                 {/* Vídeo principal (vertical) */}
                 <video
-                  src="/videos/loja.mp4"
+                  src="/assets/otica.mp4"
                   autoPlay
                   loop
                   muted
