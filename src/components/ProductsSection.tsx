@@ -16,7 +16,7 @@ const ProductsSection = () => {
     {
       title: 'Óculos de Grau',
       description: 'Armações leves e resistentes com ajuste perfeito.',
-      image: prescriptionImage,
+      image: sunglassesImage,
       price: 'R$ 899',
       installments: '12x R$ 74,92',
       badge: 'Bestseller',
@@ -34,7 +34,7 @@ const ProductsSection = () => {
     {
       title: 'Lentes',
       description: 'Antirreflexo, filtro azul, fotossensíveis e progressivas digitais.',
-      image: contactLensesImage2,
+      image: prescriptionImage,
       price: 'R$ 1.299',
       installments: '12x R$ 108,25',
       badge: 'Premium',
@@ -43,7 +43,7 @@ const ProductsSection = () => {
     {
       title: 'Óculos de Grau',
       description: 'Armações leves e resistentes com ajuste perfeito.',
-      image: prescriptionImage,
+      image: contactLensesImage2,
       price: 'R$ 899',
       installments: '12x R$ 74,92',
       badge: 'Bestseller',
