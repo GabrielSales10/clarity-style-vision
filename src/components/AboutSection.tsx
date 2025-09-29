@@ -67,7 +67,7 @@ const AboutSection = () => {
         {/* Mission & Store */}
         <AnimatedSection animation="fade-up" className="mb-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-7">
+            <div className="space-y-5">
               <h3 className="font-serif-elegant text-2xl font-semibold">
                 Quem somos
               </h3>
@@ -108,7 +108,7 @@ const AboutSection = () => {
                   loop
                   muted
                   playsInline
-                  className="w-full h-[600px] object-cover rounded-2xl shadow-large transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-[500px] object-cover rounded-2xl shadow-large transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
