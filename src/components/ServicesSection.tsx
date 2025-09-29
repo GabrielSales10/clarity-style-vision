@@ -21,7 +21,7 @@ const ServicesSection = () => {
     },
     {
       title: 'Ajuste e Manutenção',
-      description: 'Aperto de hastes, alinhamento e troca de plaquetas.',
+      description: '',
       icon: Settings,
       image: adjustmentImage,
       features: ['Aperto de hastes', 'Alinhamento', 'Troca de plaquetas.'],
@@ -30,7 +30,7 @@ const ServicesSection = () => {
     },
     {
       title: 'Garantia & Pós-venda',
-      description: 'Cobertura contra defeitos de fabricação e suporte ágil.',
+      description: '',
       icon: Users,
       image: consultationImage,
       features: ['Cobertura contra defeitos de fabricação', 'Suporte ágil.', 'Recomendações'],
@@ -39,7 +39,7 @@ const ServicesSection = () => {
     },
     {
       title: 'Lentes Personalizadas',
-      description: 'Anti-reflexo, blue control, transitions e progressivas sob medida.',
+      description: '',
       icon: Users,
       image: consultationImage,
       features: ['Anti-reflexo', 'Blue control', 'Transitions', 'Progressivas sob medida.'],
