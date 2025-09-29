@@ -7,6 +7,7 @@ import AnimatedSection from '@/components/AnimatedSection';
 import eyeExamImage from '@/assets/eye-exam-service.jpg';
 import adjustmentImage from '@/assets/glasses-adjustment-service.jpg';
 import consultationImage from '@/assets/consultation-service.jpg';
+import lentescontato from '@/assets/contact-lenses-product.jpg';
 
 const ServicesSection = () => {
   const services = [
@@ -41,7 +42,7 @@ const ServicesSection = () => {
       title: 'Lentes Personalizadas',
       description: '',
       icon: Users,
-      image: consultationImage,
+      image: lentescontato,
       features: ['Anti-reflexo', 'Blue control', 'Transitions', 'Progressivas sob medida.'],
       duration: '30 min',
       price: 'Cortesia',
