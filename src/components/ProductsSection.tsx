@@ -37,6 +37,33 @@ const ProductsSection = () => {
       badge: 'Premium',
       reviews: 4.8,
     },
+    {
+      title: 'Óculos de Grau',
+      description: 'Armações leves e resistentes com ajuste perfeito.',
+      image: prescriptionImage,
+      price: 'R$ 899',
+      installments: '12x R$ 74,92',
+      badge: 'Bestseller',
+      reviews: 4.9,
+    },
+    {
+      title: 'Óculos de Sol',
+      description: 'Proteção UV e modelos icônicos para todos os estilos.',
+      image: contactLensesImage,
+      price: 'R$ 159',
+      installments: '3x R$ 53,00',
+      badge: 'Novidade',
+      reviews: 4.7,
+    },
+    {
+      title: 'Lentes',
+      description: 'Antirreflexo, filtro azul, fotossensíveis e progressivas digitais.',
+      image: sunglassesImage,
+      price: 'R$ 1.299',
+      installments: '12x R$ 108,25',
+      badge: 'Premium',
+      reviews: 4.8,
+    },
   ];
 
   return (
