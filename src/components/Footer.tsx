@@ -9,7 +9,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: MessageCircle, href: 'https://wa.me/5585991320090?text=Olá! Gostaria de agendar uma consulta na Óticas Levy.', label: 'WhatsApp' },
     { icon: Instagram, href: 'https://www.instagram.com/otica_levy/', label: 'Instagram' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
+    // { icon: Twitter, href: '#', label: 'Twitter' },
   ];
 
   const quickLinks = [
