@@ -173,12 +173,12 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="flex items-center space-x-2 mx-auto text-primary-foreground/70 hover:text-accent text-sm transition-colors"
             >
+              <span>Site produzido por</span>
               <img 
                 src={logoGami} // caminho real da logo
                 alt="Logo GAMI"
                 className="h-6 w-auto"
               />
-              <span>Site produzido por GAMI</span>
             </a>
         
             {/* DIREITA */}
