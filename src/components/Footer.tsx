@@ -157,37 +157,40 @@ const Footer = () => {
         </div>
 
         {/* Bottom Footer */}
-        <div className="border-t border-primary-foreground/20 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+       <div className="border-t border-primary-foreground/20 py-6">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            
+            {/* ESQUERDA */}
             <p className="text-primary-foreground/70 text-sm text-center md:text-left">
               © {currentYear} Óticas Levy. Todos os direitos reservados.
             </p>
         
-            <div className="flex flex-col items-center space-y-2">
-              {/* BLOCO CENTRALIZADO */}
-              <a
-                href="https://wa.me/5585986739137"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-2 text-primary-foreground/70 hover:text-accent text-sm transition-colors"
-              >
-                <img 
-                  src="/logo-gami.png" // substitua pelo caminho real
-                  alt="Logo GAMI"
-                  className="h-6 w-auto"
-                />
-                <span>Site produzido por GAMI</span>
-              </a>
+            {/* CENTRO */}
+            <a
+              href="https://wa.me/5585986739137"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 mx-auto text-primary-foreground/70 hover:text-accent text-sm transition-colors"
+            >
+              <img 
+                src="/logo-gami.png" // caminho real da logo
+                alt="Logo GAMI"
+                className="h-6 w-auto"
+              />
+              <span>Site produzido por GAMI</span>
+            </a>
         
-              {/* LINKS DE POLÍTICA */}
-              <div className="flex space-x-6">
-                <a
-                  href="#"
-                  className="text-primary-foreground/70 hover:text-accent text-sm transition-colors"
-                >
-                  Política de Privacidade
-                </a>
-              </div>
+            {/* DIREITA */}
+            <div className="flex space-x-6">
+              <a
+                href="#"
+                className="text-primary-foreground/70 hover:text-accent text-sm transition-colors"
+              >
+                Política de Privacidade
+              </a>
+              {/* <a href="#" className="text-primary-foreground/70 hover:text-accent text-sm transition-colors">
+                Termos de Uso
+              </a> */}
             </div>
           </div>
         </div>
