@@ -174,7 +174,7 @@ const Footer = () => {
               className="flex items-center space-x-2 mx-auto text-primary-foreground/70 hover:text-accent text-sm transition-colors"
             >
               <img 
-                src="/logo-gami.png" // caminho real da logo
+                src={logoGami} // caminho real da logo
                 alt="Logo GAMI"
                 className="h-6 w-auto"
               />
