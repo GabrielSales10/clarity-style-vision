@@ -23,7 +23,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+    <header className="bg-background/95 backdrop-blur-sm border-b border-border fixed top-0 z-50">
       {/* Main Navigation */}
       <div className="container-premium">
         <div className="flex items-center justify-between py-4">
@@ -32,7 +32,7 @@ const Header = () => {
             <img
               src={logoImage}
               alt="Óticas Levy - Sua melhor visão está aqui!"
-              className="h-24 w-auto"
+              className="h-10 md:h-14 w-auto"
             />
           </div>
 
