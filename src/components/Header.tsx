@@ -32,7 +32,7 @@ const Header = () => {
             <img
               src={logoImage}
               alt="Óticas Levy - Sua melhor visão está aqui!"
-              className="h-20 w-auto"
+              className="h-24 w-auto"
             />
           </div>
 
