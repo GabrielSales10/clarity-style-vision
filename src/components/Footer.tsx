@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Twitter, MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
 import logoImage from '@/assets/logo-oticas-levy.png';
+import logoGami from '@/assets/logo-gami.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
