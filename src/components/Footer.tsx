@@ -163,7 +163,8 @@ const Footer = () => {
               © {currentYear} Óticas Levy. Todos os direitos reservados.
             </p>
         
-            <div className="flex space-x-6 items-center">
+            <div className="flex flex-col items-center space-y-2">
+              {/* BLOCO CENTRALIZADO */}
               <a
                 href="https://wa.me/5585986739137"
                 target="_blank"
@@ -171,22 +172,22 @@ const Footer = () => {
                 className="flex items-center space-x-2 text-primary-foreground/70 hover:text-accent text-sm transition-colors"
               >
                 <img 
-                  src="/logo-gami.png" // substitua pelo caminho real da sua logo
+                  src="/logo-gami.png" // substitua pelo caminho real
                   alt="Logo GAMI"
                   className="h-6 w-auto"
                 />
                 <span>Site produzido por GAMI</span>
               </a>
         
-              <a
-                href="#"
-                className="text-primary-foreground/70 hover:text-accent text-sm transition-colors"
-              >
-                Política de Privacidade
-              </a>
-              {/* <a href="#" className="text-primary-foreground/70 hover:text-accent text-sm transition-colors">
-                Termos de Uso
-              </a> */}
+              {/* LINKS DE POLÍTICA */}
+              <div className="flex space-x-6">
+                <a
+                  href="#"
+                  className="text-primary-foreground/70 hover:text-accent text-sm transition-colors"
+                >
+                  Política de Privacidade
+                </a>
+              </div>
             </div>
           </div>
         </div>
